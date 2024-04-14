@@ -3,12 +3,6 @@ DROP DATABASE if EXISTS db_quiropractica_especifica;
 CREATE DATABASE db_quiropractica_especifica;
 
 USE db_quiropractica_especifica;
- 
- 
- CREATE TABLE tb_fotos (
-id_foto INT PRIMARY KEY AUTO_INCREMENT NOT NULL, 
-imagen VARCHAR (250) NOT NULL
-);
 
 CREATE TABLE tb_clientes(
 id_cliente INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -54,37 +48,47 @@ id_nivel_usuario INT ,
 FOREIGN KEY (id_nivel_usuario) REFERENCES tb_niveles_usuarios (id_nivel_usuario)
 );
  
-CREATE TABLE tb_tratamientos (
-id_tratamiento INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-fecha_inicio_tratamiento DATE,
-tipo_de_tratamiento VARCHAR (75) NOT NULL,
-duracion_estimada VARCHAR (50) NOT NULL,
-notas_adicionales VARCHAR (250) NOT NULL
-);
+
 CREATE TABLE tb_servicios (
 id_servicio INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 tipo_servicio VARCHAR (45) NOT NULL,
 Descripcion_servicio VARCHAR (250) NOT NULL
 );
 
-CREATE TABLE tb_valoraciones (
-id_valoracion INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-valoracion VARCHAR (250) NOT NULL,
-id_cliente INT NOT NULL,
-CONSTRAINT fk_valoracion_cliente
-FOREIGN KEY (id_cliente)
-REFERENCES tb_clientes (id_cliente)  
-);
-
-
 CREATE TABLE tb_conceptos (
 id_concepto INT  AUTO_INCREMENT PRIMARY KEY,
 info_concepto VARCHAR (250) NOT NULL,
 ubicacion_clinica VARCHAR (255) NOT NULL,
 redes_sociales VARCHAR (255) NOT NULL,
-fotografia VARCHAR (250),
-id_foto int,
-FOREIGN KEY (id_foto) REFERENCES tb_fotos (id_foto)
+fotografia VARCHAR (250)
+);
+
+ CREATE TABLE tb_fotos (
+id_foto INT PRIMARY KEY AUTO_INCREMENT NOT NULL, 
+imagen VARCHAR (250) NOT NULL,
+id_concepto int,
+FOREIGN KEY (id_concepto) REFERENCES tb_conceptos (id_concepto)
+);
+
+CREATE TABLE tb_sesiones (
+id_sesion INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+nombre_cliente VARCHAR (50) NOT NULL,
+apellido_cliente VARCHAR (50) NOT NULL,
+sesiones_cliente VARCHAR (50) NOT NULL,
+molestias_cliente VARCHAR (100) NULL,
+antecedentes_cliente VARCHAR (50) NULL,
+id_servicio	int,
+foreign key (id_servicio) references tb_servicios (id_servicio)
+);
+
+CREATE TABLE tb_tratamientos (
+id_tratamiento INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+fecha_inicio_tratamiento DATE,
+tipo_de_tratamiento VARCHAR (75) NOT NULL,
+duracion_estimada VARCHAR (50) NOT NULL,
+notas_adicionales VARCHAR (250) NOT NULL,
+id_sesion	int,
+foreign key (id_sesion) references tb_sesiones (id_sesion)
 );
 
 CREATE TABLE tb_citas(
@@ -99,23 +103,21 @@ id_concepto INT,
 FOREIGN KEY (id_concepto) REFERENCES tb_conceptos (id_concepto)
 );
 
-
-CREATE TABLE tb_sesiones (
-id_sesion INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-nombre_cliente VARCHAR (50) NOT NULL,
-apellido_cliente VARCHAR (50) NOT NULL,
-sesiones_cliente VARCHAR (50) NOT NULL,
-molestias_cliente VARCHAR (100) NULL,
-antecedentes_cliente VARCHAR (50) NULL
+CREATE TABLE tb_valoraciones (
+id_valoracion INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+valoracion VARCHAR (250) NOT NULL,
+id_cita	int,
+foreign key (id_cita)  references tb_citas (id_cita)
 );
 
 CREATE TABLE tb_expedientes (
 id_expediente INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-id_cliente INT ,
-FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente), 
 antecedentes_cliente VARCHAR (50) NULL,
 id_sesion int,
 FOREIGN KEY (id_sesion) REFERENCES tb_sesiones (id_sesion), 
 id_empleado	int,
-FOREIGN KEY (id_empleado) REFERENCES tb_empleados (id_empleado)
+FOREIGN KEY (id_empleado) REFERENCES tb_empleados (id_empleado),
+id_cita	int,
+foreign key (id_cita) references tb_citas (id_cita)
 );
+
