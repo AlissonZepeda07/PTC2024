@@ -29,6 +29,7 @@ header.innerHTML = `<nav class="navbar navbar-expand-md bg-body-tertiary" id="in
     </div>
 </nav>`
 
+
 // Código para tener el footer, para luego mandarlo a llamar
 
 const footer = document.querySelector("footer");
@@ -67,3 +68,6 @@ footer.innerHTML = `
 </div>
 <!-- Copyright -->
 </div>`
+
+
+
