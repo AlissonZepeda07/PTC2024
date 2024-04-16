@@ -39,12 +39,12 @@
 
                         </div>
                         <div class="col-sm-12 col-md-4">
-                            <div class="col">
+                            <div class="col text-center">
                                 <button type="button" class="btn btn-primary cente" id="botondescripcion">
                                     Descripcion
                                 </button>
                             </div> 
-                            <div class="col">
+                            <div class="col text-center">
                                 <button type="button" class="btn btn-secondary  text-center" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop02" id="botonbeneficios">
                                     Beneficios
@@ -102,13 +102,13 @@
 
                         </div>
                         <div class="col-sm-12 col-md-4">
-                            <div class="col">
+                            <div class="col text-center">
                                 <button type="button" class="btn btn-primary cente" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop" id="botondescripcion">
                                     Descripcion
                                 </button>
                             </div> 
-                            <div class="col">
+                            <div class="col text-center">
                                 <button type="button" class="btn btn-secondary  text-center"  id="botonbeneficios">
                                     Beneficios
                                 </button>
@@ -125,7 +125,7 @@
                         </div>
                         <div class="col-sm-12  col-md-12 ">
                             <div class="col text-center ">
-                                <button type="button" class="btn btn-primary " id="botoncambios">
+                                <button type="button" class="btn btn-primary " id="botoncambios" data-bs-toggle="modal" data-bs-target="#ModalInterrogante">
                                     Realizar Cambios
                                 </button>
                             </div> 
@@ -135,7 +135,162 @@
                 </div>
             </div> 
         </div>
+        <!--modal agregar servicio-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop03"> Agregar Servicio
+        </button>
+         <!-- Modal -->
+
+        <div class="modal fade" id="staticBackdrop03" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header" id="headercolor">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Ajuste de columna</h1>
+                    </div>
+                    <div class="modal-body row g-3">
+                        <div class="col-sm-12 col-md-8 justify-content-center">
+                            <label for="AgregarImagenColum01" class="form-label">Imagen</label>
+                            <input id="AgregarImagenColum01" type="file" name="AgregarImagenColum01" class="form-control"
+                                accept=".png, .jpg">
+
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-primary cente" id="botondescripcion">
+                                    Descripcion
+                                </button>
+                            </div> 
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-secondary  text-center" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop04" id="botonbeneficios">
+                                    Beneficios
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-md-12 ">
+                            <form action="row g-2">
+                                <label for="Descripcion01" class="form-label"> </label>
+                                <input type="text" class="form-control" id="Descripcion01"
+                                placeholder="Descripciòn" aria-label="Descripcion"
+                                aria-describedby="basic-addon1" required>
+
+                                 <div class="mb-3">
+                                    <label for="Texto01" class="form-label"></label>
+                                    <textarea class="form-control" id="Texto01" placeholder="Texto" aria-label="Texto" rows="3"></textarea>
+                              </div>
+                            </form>
+
+                           
+                        </div>
+                        
+                        <div class="col-sm-12  col-md-12 ">
+                            <div class="col text-center ">
+                                <button type="button" class="btn btn-primary " id="botoncambios">
+                                    Realizar Cambios
+                                </button>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        
+        <div class="modal fade" id="staticBackdrop04" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header" id="headercolor">
+                        <button type="button" class="btn " data-bs-target="#staticBackdrop03" data-bs-toggle="modal"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Ajuste de columna</h1>
+                    </div>
+                    <div class="modal-body row g-3">
+                        <div class="col-sm-12 col-md-8 justify-content-center">
+                            <label for="AgregarImagenColum02" class="form-label">Imagen</label>
+                            <input id="AgregarImagenColum02" type="file" name="AgregarImagenColum02" class="form-control"
+                                accept=".png, .jpg">
+
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-primary cente" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop03" id="botondescripcion">
+                                    Descripcion
+                                </button>
+                            </div> 
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-secondary  text-center"  id="botonbeneficios">
+                                    Beneficios
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-md-12 ">
+                            <form action="row g-2">
+                                
+                                 <div class="mb-3">
+                                    <label for="Texto01" class="form-label"></label>
+                                    <textarea class="form-control" id="Texto01" placeholder="Texto" aria-label="Texto" rows="3"></textarea>
+                              </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-12  col-md-12 ">
+                            <div class="col text-center ">
+                                <button type="button" class="btn btn-primary " id="botoncambios" data-bs-toggle="modal" data-bs-target="#ModalInterrogante"> 
+                                    Realizar Cambios
+                                </button>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+         <!-- Modal Interrogante -->
+         <div class="modal fade" id="ModalInterrogante" tabindex="-1" data-bs-backdrop="static"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+
+                 <!-- Body del modal -->
+                 <div class="modal-body text-center">
+                     <img src="../../recursos/img/Interrogante.png" alt="" width="100px">
+                     <p class="mt-2"> ¿Estas seguro de realizar estos cambios? </p>
+                     <hr>
+                     <button type="button" id="BtnInterrogante" class="btn bg-dark text-light me-2"
+                         data-bs-toggle="modal" data-bs-target="#ModalRealizado"> Si </button>
+                     <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal"> No </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!-- Modal Cambio realizado -->
+     <div class="modal fade" id="ModalRealizado" tabindex="-1" data-bs-backdrop="static"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+
+                 <!-- Body del modal -->
+                 <div class="modal-body text-center">
+                     <img src="../../recursos/img/Listo.png" alt="" width="100px">
+                     <p class="mt-2"> Cambios realizados. </p>
+                     <div class="progress">
+                         <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
     </main>
+
+    <script src="../../controlles/privada/alerta.js"></script>
 </body>
 
 </html>
