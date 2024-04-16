@@ -1,0 +1,31 @@
+#headercolor{
+    background-color: #043342;
+    color: #ffffff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+ 
+}
+ 
+#botondescripcion{
+    background-color: #043342;
+    border: #043342;
+    margin-bottom: 30px;
+}
+ 
+#botonbeneficios{
+    background-color: #043342;
+    border: #043342;
+    margin-bottom: 30px;
+}
+ 
+#staticBackdropLabel{
+    text-align: center;
+}
+
+#botoncambios{
+    background-color: #043342;
+    border: #043342;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    
+}
