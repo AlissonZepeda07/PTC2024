@@ -1,0 +1,20 @@
+#headercolor{
+    background-color: #043342;
+    color: #ffffff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /*margin: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);*/
+}
+
+#footerColor{
+    background-color: #043342;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ 
+#botonPacienteedit{
+    margin-top: 35px;
+    background-color: #043342;
+    color: #ffffff;
+}

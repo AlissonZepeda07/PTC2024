@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../recursos/css/boostrap_css.css">
+    <link rel="stylesheet" href="../../recursos/css/colores.css">
+    <link rel="stylesheet" href="../../recursos/css/Cita.css">
+    <title>Cita</title>
+</head>
+
+<body>
+
+    <main>
+        <main> <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                EDITAR
+            </button>
+            <!-- Modal -->
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header" id="headercolor">
+                            <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                    src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar cita</h1>
+                        </div>
+                        <div class="modal-body row g-3">
+                            
+                                <div class="col-sm-12 col-md-6 ">
+                                    <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
+                                    <h5 class="mt-4"> Manuel Fratti</h5>
+                                    <div class="col-sm-12 col-md-4">
+                                        <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
+                                    Agregar fecha
+                                </button>
+                                
+                            </div>
+                        </div>
+                            <div class="col-sm-12 col-md-6">
+                                
+                                <label for="validationCustom05" class="form-label mt-3"> Cantidad de sesiones
+                                        </label>
+                                        <input type="number" class="form-control" id="validationCustom02"
+                                            placeholder="0" min="0" aria-label="Username"
+                                            aria-describedby="basic-addon2">
+
+                                    
+                                            <label for="appt" class="form-label mt-3">Hora:</label>
+                                                <input type="time" id="appt" name="appt">
+                                                <input type="submit">
+                                            
+                                                <label for="validationCustom02" class="form-label mt-3">Precio</label>
+                                                <input type="text" class="form-control" id="validationCustom02"
+                                                    aria-label="Username"
+                                                    aria-describedby="basic-addon2" required
+                                                    oninput="formatPhoneNumber(this)">
+                                                <div class="form-text" id="basic-addon2">
+                                                </div>
+                                                
+                                              <form class="row g-2 needs-validation" novalidate>
+                                        <label for="validationCustom01" class="form-label"> Nombre </label>
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="Manuel Fratti" aria-label="Username"
+                                            aria-describedby="basic-addon1" required>
+
+                                            <label for="validationCustom04" class="form-label mt-3"> Servicios
+                                                contratados
+                                            </label>
+                                            <select class="form-select">
+                                                <option selected> Masaje Quiropráctico </option>
+                                                <option> Acupuntura </option>
+                                            </select>
+
+                                            
+                                                
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
+                                        Editar cita
+                                    </button>
+                                        </div>
+                                        
+                                    </form>
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer p-4" id="footerColor">
+
+                            </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- Plantilla Boostrap -->
+        <script src="../../recursos/js/bootstrap_js.js"></script>
+
+        <!-- Plantilla Alerta de modal -->
+        <script src="../../controlles/privada/alerta.js"></script>
+</body>
+
+</html>
