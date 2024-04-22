@@ -8,6 +8,7 @@
     <title> Quiropráctica Específica </title>
     <link rel="stylesheet" href="../../recursos/css/boostrap_css.css">
     <link rel="stylesheet" href="../../recursos/css/colores.css">
+    <link rel="stylesheet" href="../../recursos/css/general.css">
 </head>
 
 <body>
@@ -32,8 +33,7 @@
         <!-- Contenedor de cartas|perfiles -->
         <div class="container mt-3">
             <div class="row justify-content-center">
-
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -257,7 +257,7 @@
                     </div>
                 </div>
 
-                <div class="card border-2 border-info m-3" style="width: 18rem;">
+                <div class="cartaPacientePrivado card border-2 border-info m-3">
                     <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -293,7 +293,7 @@
         </div>
 
         <!-- Modal Expediente -->
-        <div class="modal fade modal-xl" id="ModalExpediente" tabindex="-1" data-bs-backdrop="static"
+        <div class="modal fade modal-lg" id="ModalExpediente" tabindex="-1" data-bs-backdrop="static"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -308,21 +308,26 @@
                     <!-- Body del modal -->
                     <div class="modal-body">
                         <div class="container mt-3 mb-5">
-                            <div class="d-flex flex-row">
-                                <div class="col.6 ms-5">
-                                    <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
-                                    <h3 class="text-center mt-2"> Manuel Fratti </h3>
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="col-6 ms-5">
+                                        <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
+                                        <h3 class="mt-3"> Manuel Fratti </h3>
+                                    </div>
                                 </div>
-                                <div class="col.6 ms-5">
-                                    <p class="fs-5 fw-normal"> Numero de telefono: 7777-7777 </p>
-                                    <p class="fs-5 fw-normal"> Fecha de nacimiento: 16/06/2004 </p>
-                                    <p class="fs-5 fw-normal"> Genero: Masculino </p>
-                                    <p class="fs-5 fw-normal"> Citas realizadas: 23 </p>
-                                    <p class="fs-5 fw-normal"> id: 20225463 </p>
-                                    <p class="fs-5 fw-normal"> Secciones pendientes: 4 </p>
-                                    <p class="fs-5 fw-normal"> Servicios contratados: "Servicios" </p>
-                                    <p class="fs-5 fw-normal"> Notas: </p>
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="col-6 ms-5">
+                                        <p class="fs-5 fw-normal"> Numero de telefono: 7777-7777 </p>
+                                        <p class="fs-5 fw-normal"> Fecha de nacimiento: 16/06/2004 </p>
+                                        <p class="fs-5 fw-normal"> Genero: Masculino </p>
+                                        <p class="fs-5 fw-normal"> Citas realizadas: 23 </p>
+                                        <p class="fs-5 fw-normal"> id: 20225463 </p>
+                                        <p class="fs-5 fw-normal"> Secciones pendientes: 4 </p>
+                                        <p class="fs-5 fw-normal"> Servicios contratados: "Servicios" </p>
+                                        <p class="fs-5 fw-normal"> Notas: </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -351,58 +356,71 @@
                     <!-- Body del modal -->
                     <div class="modal-body">
                         <div class="container mt-3 mb-5">
-                            <div class="d-flex flex-row">
-                                <div class="col ms-5">
-                                    <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
-                                    <h5 class="mt-4"> Fecha de nacimiento </h5>
-                                    <img src="../../recursos/img/Calendario.png" alt="" width="300px" class="mt-4">
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-10 col-md-6 col-lg-4">
+                                    <div class="col-6 ms-5">
+                                        <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
+                                        <h5 class="mt-4"> Fecha de nacimiento </h5>
+                                        <img src="../../recursos/img/Calendario.png" alt="" width="300px"
+                                            class="mt-4 mb-4">
+                                    </div>
                                 </div>
-                                <div class="col ms-5">
-                                    <form class="row g-2 needs-validation" novalidate>
-                                        <label for="validationCustom01" class="form-label"> Nombre </label>
-                                        <input type="text" class="form-control" id="validationCustom01"
-                                            placeholder="Manuel Fratti" aria-label="Username"
-                                            aria-describedby="basic-addon1" required>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="col-10 ms-5">
+                                        <form class="row g-2 needs-validation" novalidate>
+                                            <label for="validationCustom01" class="form-label"> Nombre </label>
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                placeholder="Manuel Fratti" aria-label="Username"
+                                                aria-describedby="basic-addon1" required>
 
-                                        <label for="validationCustom02" class="form-label mt-3">Número de
-                                            teléfono</label>
-                                        <input type="text" class="form-control" id="validationCustom02"
-                                            placeholder="0000-0000" aria-label="Username"
-                                            aria-describedby="basic-addon2" required oninput="formatPhoneNumber(this)">
-                                        <div class="form-text" id="basic-addon2"> El formato debe ser 0000-0000. </div>
+                                            <label for="validationCustom02" class="form-label mt-3">Número de
+                                                teléfono</label>
+                                            <input type="text" class="form-control" id="validationCustom02"
+                                                placeholder="0000-0000" aria-label="Username"
+                                                aria-describedby="basic-addon2" required
+                                                oninput="formatPhoneNumber(this)">
+                                            <div class="form-text" id="basic-addon2"> El formato debe ser 0000-0000.
+                                            </div>
 
-                                        <label for="validationCustom03" class="form-label mt-3"> Citas realizadas
-                                        </label>
-                                        <input type="number" class="form-control" id="validationCustom02"
-                                            placeholder="0" min="0" aria-label="Username" aria-describedby="basic-addon2">
+                                            <label for="validationCustom03" class="form-label mt-3"> Citas realizadas
+                                            </label>
+                                            <input type="number" class="form-control" id="validationCustom02"
+                                                placeholder="0" min="0" aria-label="Username"
+                                                aria-describedby="basic-addon2">
 
-                                        <label for="validationCustom04" class="form-label mt-3"> Servicios contratados
-                                        </label>
-                                        <select class="form-select">
-                                            <option selected> Masaje Quiropráctico </option>
-                                            <option> Acupuntura </option>
-                                        </select>
+                                            <label for="validationCustom04" class="form-label mt-3"> Servicios
+                                                contratados
+                                            </label>
+                                            <select class="form-select">
+                                                <option selected> Masaje Quiropráctico </option>
+                                                <option> Acupuntura </option>
+                                            </select>
 
-                                        <label for="validationCustom05" class="form-label mt-3"> Secciones pendientes
-                                        </label>
-                                        <input type="number" class="form-control" id="validationCustom02"
-                                            placeholder="0" min="0" aria-label="Username" aria-describedby="basic-addon2">
+                                            <label for="validationCustom05" class="form-label mt-3"> Secciones
+                                                pendientes
+                                            </label>
+                                            <input type="number" class="form-control" id="validationCustom02"
+                                                placeholder="0" min="0" aria-label="Username"
+                                                aria-describedby="basic-addon2">
 
-                                        <label class="form-label mt-3"> Género </label>
-                                        <select class="form-select">
-                                            <option selected> Masculino </option>
-                                            <option> Femenino </option>
-                                        </select>
+                                            <label class="form-label mt-3"> Género </label>
+                                            <select class="form-select">
+                                                <option selected> Masculino </option>
+                                                <option> Femenino </option>
+                                            </select>
 
-                                        <button class="btn bg-dark text-light mt-5" type="submit"> Agregar paciente
-                                        </button>
-                                    </form>
+                                            <button class="btn bg-dark text-light mt-5" type="submit"> Agregar paciente
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="col ms-5">
-                                    <div class="form-floating">
-                                        <textarea class="form-control mt-3" id="floatingTextarea" style="height: 200px"
-                                            required></textarea>
-                                        <label for="floatingTextarea2"> Nota: </label>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="col-10 ms-5">
+                                        <div class="form-floating">
+                                            <textarea class="textopacienteprivado form-control mt-3 pb-5"
+                                                id="floatingTextarea" required></textarea>
+                                            <label for="floatingTextarea2"> Nota: </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -433,55 +451,63 @@
                     <!-- Body del modal -->
                     <div class="modal-body">
                         <div class="container mt-3 mb-5">
-                            <div class="d-flex flex-row">
-                                <div class="col ms-5">
-                                    <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
-                                    <h5 class="mt-4"> Fecha de nacimiento </h5>
-                                    <img src="../../recursos/img/Calendario.png" alt="" width="300px" class="mt-4">
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="col ms-5">
+                                        <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
+                                        <h5 class="mt-4"> Fecha de nacimiento </h5>
+                                        <img src="../../recursos/img/Calendario.png" alt="" width="300px"
+                                            class="mt-4 mb-4">
+                                    </div>
                                 </div>
-                                <div class="col me-5">
-                                    <form class="row g-2 needs-validation" novalidate>
-                                        <label for="validationCustom01" class="form-label"> Nombre </label>
-                                        <input type="text" class="form-control" id="validationCustom01"
-                                            placeholder="Manuel Fratti" value="Manuel Fratti" aria-label="Username"
-                                            aria-describedby="basic-addon1" required>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="col ms-5">
+                                        <form class="row g-2 needs-validation" novalidate>
+                                            <label for="validationCustom01" class="form-label"> Nombre </label>
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                placeholder="Manuel Fratti" value="Manuel Fratti" aria-label="Username"
+                                                aria-describedby="basic-addon1" required>
 
-                                        <label for="validationCustom02" class="form-label mt-3">Número de
-                                            teléfono</label>
-                                        <input type="text" class="form-control" id="validationCustom02"
-                                            placeholder="0000-0000" value="0000-0000" aria-label="Username"
-                                            aria-describedby="basic-addon2" required oninput="formatPhoneNumber(this)">
-                                        <div class="valid-feedback">
-                                            El formato debe ser 0000-0000.
-                                        </div>
+                                            <label for="validationCustom02" class="form-label mt-3">Número de
+                                                teléfono</label>
+                                            <input type="text" class="form-control" id="validationCustom02"
+                                                placeholder="0000-0000" value="0000-0000" aria-label="Username"
+                                                aria-describedby="basic-addon2" required
+                                                oninput="formatPhoneNumber(this)">
+                                            <div class="valid-feedback">
+                                                El formato debe ser 0000-0000.
+                                            </div>
 
-                                        <label for="validationCustom03" class="form-label mt-3"> Citas realizadas
-                                        </label>
-                                        <input type="number" class="form-control" id="validationCustom02"
-                                            placeholder="0" min="0" value="23" aria-label="Username"
-                                            aria-describedby="basic-addon2">
+                                            <label for="validationCustom03" class="form-label mt-3"> Citas realizadas
+                                            </label>
+                                            <input type="number" class="form-control" id="validationCustom02"
+                                                placeholder="0" min="0" value="23" aria-label="Username"
+                                                aria-describedby="basic-addon2">
 
-                                        <label for="validationCustom04" class="form-label mt-3"> Servicios contratados
-                                        </label>
-                                        <select class="form-select">
-                                            <option selected> Masaje Quiropráctico </option>
-                                            <option> Acupuntura </option>
-                                        </select>
-                                        <label for="validationCustom05" class="form-label mt-3"> Secciones pendientes
-                                        </label>
-                                        <input type="number" class="form-control" id="validationCustom02"
-                                            placeholder="0" min="0" value="4" aria-label="Username"
-                                            aria-describedby="basic-addon2">
+                                            <label for="validationCustom04" class="form-label mt-3"> Servicios
+                                                contratados
+                                            </label>
+                                            <select class="form-select">
+                                                <option selected> Masaje Quiropráctico </option>
+                                                <option> Acupuntura </option>
+                                            </select>
+                                            <label for="validationCustom05" class="form-label mt-3"> Secciones
+                                                pendientes
+                                            </label>
+                                            <input type="number" class="form-control" id="validationCustom02"
+                                                placeholder="0" min="0" value="4" aria-label="Username"
+                                                aria-describedby="basic-addon2">
 
-                                        <label class="form-label mt-3"> Género </label>
-                                        <select class="form-select">
-                                            <option selected> Masculino </option>
-                                            <option> Femenino </option>
-                                        </select>
+                                            <label class="form-label mt-3"> Género </label>
+                                            <select class="form-select">
+                                                <option selected> Masculino </option>
+                                                <option> Femenino </option>
+                                            </select>
 
-                                        <button class="btn bg-dark text-light mt-5" type="submit"> Editar paciente
-                                        </button>
-                                    </form>
+                                            <button class="btn bg-dark text-light mt-5" type="submit"> Editar paciente
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
