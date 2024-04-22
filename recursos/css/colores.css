@@ -82,7 +82,12 @@
 .color_secundario {
     color: #3ED1FF
 }
+<<<<<<< HEAD
 
 .color_fondo{
     background-color: #043342;
+=======
+.color_fondo{
+    background-color: #043342
+>>>>>>> 035e4c6ae0d6cb971accf1bc170d4b8c8fccbb88
 }
