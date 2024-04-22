@@ -48,7 +48,36 @@
 }
 
 /*pagina principal*/
-/*servicios*/
+.sin_link {
+    text-decoration: none;
+    color: black;
+}
 
+/*quienes somos?*/
+.fondo-imagen {
+    background-image: url("../../recursos/img/admin/fondo_quienees_somos.png");
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    width: 100%;
+    /* Ancho del div */
+    height: 300px;
+    /* Altura del div */
+}
 
+/*pagina inicio*/
+.color_nav {
+    background-color: #ECECEC;
+}
 
+.titulo_estilo {
+    font-family: "Inter", sans-serif;
+}
+
+/*Colores base*/
+.color_secundario {
+    color: #3ED1FF
+}

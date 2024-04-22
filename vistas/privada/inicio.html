@@ -11,20 +11,137 @@
 
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container text-center d-flex justify-content-center align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="../../recursos/img/icono.png" alt="Bootstrap" width="200px">
-                </a>
-            </div>
-        </nav>
+        
     </header>
+    <main class="container my-5">
 
-    <nav class="container">
-        <div class="">
+        <div class="row justify-content-center">
 
+            <div class="col-sm-12 col-md-6 my-5  text-center">
+                <img src="../../recursos/img/admin/usuario_persona.jpg" height="350px" alt=""
+                    style="border-radius: 5%; border: 5px solid navy;">
+
+                <p class="my-2"><button type="button" class="btn btn-primary">Editar datos</button></p>
+            </div>
+
+
+            <div class="col text-center">
+
+                <h1 class="titulo_estilo">Agenda Mensual</h1>
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </nav>
+        <!--Graficas de datos generales-->
+        <div class="my-5">
+            <div class="row text-center">
+                <h1 class="display-3">Total de ventas</h1>
+                <div class="col-sm-12 col-md-6">
+                    <canvas id="grafica_1" height="170px"></canvas>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <canvas id="grafica_2" width="170px"></canvas>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row justify-content-center">
+
+                <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../recursos/img/admin/agenda_imagen.jpg" height="200px" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ver agenda</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../recursos/img/admin/citio_publico.jpg" height="200px" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Editar Sitio publico</h5>
+                            <div class="dropdown ">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 my-5 mx-auto">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../recursos/img/admin/estadisticas.png" height="200px" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ver estadisticas</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col"></div>
+            </div>
+        </div>
+    </main>
 
 
 
@@ -32,8 +149,15 @@
 
     </footer>
 
-    <script src="../../controlles/utiles/plantilla_footer.js"></script>
+    <style>
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+        <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
     <script src="../../recursos/js/bootstrap_js.js"></script>
+    <script src="../../controlles/privada/graficas.js"></script>
 </body>
+<script>
+
+</script>
 
 </html>
