@@ -9,16 +9,16 @@ header.innerHTML = `<nav class="navbar navbar-expand-md bg-body-tertiary" id="in
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link  color_nav_text" aria-current="page" href="#inicio_pt1">Inicio</a>
+                    <a class="nav-link  color_nav_text" aria-current="page" href="inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link color_nav_text" aria-current="page" href="#inicio_pt1">Citas</a>
+                    <a class="nav-link color_nav_text" aria-current="page" href="citas.html">Citas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link color_nav_text" aria-current="page" href="#inicio_pt1">Notas</a>
+                    <a class="nav-link color_nav_text" aria-current="page" href="Notas_privada.html">Notas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link color_nav_text" aria-current="page" href="#inicio_pt1">Pacientes</a>
+                    <a class="nav-link color_nav_text" aria-current="page" href="Pacientes_privada.html">Pacientes</a>
                 </li>
             </ul>
 
@@ -28,7 +28,6 @@ header.innerHTML = `<nav class="navbar navbar-expand-md bg-body-tertiary" id="in
         </div>
     </div>
 </nav>`
-
 
 // Código para tener el footer, para luego mandarlo a llamar
 
