@@ -3,7 +3,8 @@
     color: #ffffff;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
- 
+    margin: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
  
 #botondescripcion{
