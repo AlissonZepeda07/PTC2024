@@ -7,3 +7,15 @@
     height: auto;
     max-height: 200px;
 }
+
+.textodenotadefinido{
+    height: auto;
+    max-height: 400px;
+    border-color: rgb(42, 141, 180);
+}
+
+.textodenotasgregar{
+    height: auto;
+    max-height: 400px;
+    border-color: rgb(42, 141, 180);
+}
