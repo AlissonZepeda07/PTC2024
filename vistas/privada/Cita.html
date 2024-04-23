@@ -2,86 +2,648 @@
 <html lang="es">
 
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Notas </title>
     <link rel="stylesheet" href="../../recursos/css/boostrap_css.css">
     <link rel="stylesheet" href="../../recursos/css/colores.css">
-    <link rel="stylesheet" href="../../recursos/css/Cita.css">
-    <title>Cita</title>
+    <link rel="stylesheet" href="../../recursos/css/general.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.3/daterangepicker.css"
+        rel="stylesheet" />
 </head>
 
 <body>
 
-    <main>
-        <main> <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                EDITAR
-            </button>
-            <!-- Modal editar cita-->
+    <!-- Navbar -->
+    <header id="header">
 
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
+    </header>
+
+    <!-- Body principal -->
+    <main>
+
+
+        <!-- Logo e boton -->
+        <br>
+        <br>
+        <div class="container">
+  
+
+            <div class="col-6 row container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contenedor de cartas|perfiles -->
+            <div class="container mt-3">
+                <div class="row justify-content-center">
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    </a>
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#ModalAgregarDefinido">
+                        <img src="../../recursos/img/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> Juan Rodriguez </h5>
+                            <p class="card-text text-center"> 61258956 </p>
+                            <div class="container text-center mt-4">
+                                <div class="col-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#ModalInterrogante"><img src="../../recursos/img/Basura.png"
+                                            alt="" width="50px">
+                                        <p class="card-text"> Eliminar </p>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                            src="../../recursos/img/Boligrafo.png" alt="" width="50px">
+                                        <p class="card-text"> Editar </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Notapacientedefinido -->
+
+            <div class="modal fade modal-xl" id="ModalExpediente" tabindex="-1" data-bs-backdrop="static"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header" id="headercolor">
+
+                        <!-- Header del modal -->
+                        <div class="modal-header bg-dark">
                             <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
                                     src="../../recursos/img/Atras.png" alt="" width="20px"></button>
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar cita</h1>
+                            <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Expediente </h1>
                         </div>
-                        <div class="modal-body row g-3">
 
-                            <div class="col-sm-12 col-md-6 text-center">
-                                <img src="../../recursos/img/Paciente2.png" alt="" class="img-fluid" width="300px  height="300px>
-                                <h5 class="mt-4">Manuel Fratti</h5>
-                                <button type="button" class="btn btn-secondary mt-3" id="botonPacienteedit">Agregar fecha</button>
-                            </div>
-                        
-                            <div class="col-sm-12 col-md-6">
-                                <div class="text-center">
-                                    <label for="validationCustom05" class="form-label mt-3">Cantidad de sesiones</label>
-                                    <input type="number" class="form-control" id="validationCustom02" placeholder="0" min="0" aria-label="Username" aria-describedby="basic-addon2">
-                                </div>
-                                <div class="text-center mt-3">
-                                    <label for="appt" class="form-label">Hora:</label>
-                                    <input type="time" id="appt" name="appt">
-                                </div>
-                                <div class="mt-3">
-                                    <label for="validationCustom02" class="form-label">Precio</label>
-                                    <input type="text" class="form-control" id="validationCustom02" aria-label="Username" aria-describedby="basic-addon2" required oninput="formatPhoneNumber(this)">
-                                    <div class="form-text" id="basic-addon2"></div>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <label for="validationCustom01" class="form-label">Síntomas</label>
-                                    <input type="text" class="form-control" id="validationCustom01" aria-label="Username" aria-describedby="basic-addon1" required>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <label for="validationCustom04" class="form-label">Servicios contratados</label>
-                                    <select class="form-select">
-                                        <option selected>Masaje Quiropráctico</option>
-                                        <option>Acupuntura</option>
-                                    </select>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <button type="button" class="btn btn-secondary" id="botonPacienteedit">Editar cita</button>
-                                </div>
-                            </div>
-                        
-                        </div>
-                        
-                        <div class="modal-footer p-4" id="footerColor">
 
+                        <!-- Footer del modal -->
+                    </div>
+                    <div class="modal-footer bg-dark p-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Ver nota definido -->
+        <div class="modal fade modal-xl" id="ModalAgregarDefinido" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Agregar nota </h1>
+                    </div>
+                    <!-- Body del modal -->
+                    <!-- imagen del paciente del modal -->
+                    <div class="modal-body">
+                        <div class="row d-flex flex-row  contenidoNogta text-center justify-content-center">
+                            <div class="col-5 row imgpaciente">
+                                <div class="card" style="width: 17rem; height:19rem;">
+                                    <br>
+                                    <img src="../../recursos/img/Paciente1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text" style="text-align: center;">Juan Rodriguez</p>
+                                        <p class="card-text" style="text-align: center;">20220426</p>
+                                    </div>
+                                </div>
+
+                                <!-- imagen del paciente del modal -->
+                                <div class="mx-auto col-mx-6 flex-rowx-auto text-center">
+                                    <button class="btn btn-primary" type="button">Agregar fecha</button>
+                                </div>
+                            </div>
+
+                            <!-- espacio de nota del modal -->
+                            <div class="col-6 row" style="margin-right:40px;">
+                                <div class="d-flex flex-row">
+                                    <div class="col ms-5">
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="textodenotadefinido form-control mt-3" id="floatingTextarea"
+                                        style="height:400px;" required></textarea>
+                                    <label for="floatingTextarea2"> Nota: </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </main>
+                <br>
+            </div>
+        </div>
+
+        <!-- Modal editar nota paciente definido -->
+        <div class="modal fade modal-xl" id="ModalExpediente" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Expediente </h1>
+                    </div>
+
+
+                    <!-- Footer del modal -->
+                </div>
+                <div class="modal-footer bg-dark p-4">
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Modal editar definido -->
+        <div class="modal fade modal-xl" id="ModaleditarDefinido" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Agregar Cita </h1>
+                    </div>
+
+                    <!-- Body del modal -->
+                    <div class="modal-body">
+                        <div class="container mt-3 mb-5">
+                            <div class="d-flex flex-row">
+                                <div class="container-fluid">
+                                    <div class="row text-white text-center">
+                                        <!-- imagen del paciente del modal -->
+                                        <div class="modal-body">
+                                            <div
+                                                class="row d-flex flex-row  contenidoNogta text-center justify-content-center">
+                                                <div class="col-5 row imgpaciente">
+                                                    <div class="card" style="width: 17rem; height:19rem;">
+                                                        <br>
+                                                        <img src="../../recursos/img/Paciente1.png" class="card-img-top"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text" style="text-align: center;">Juan
+                                                                Rodriguez</p>
+                                                            <p class="card-text" style="text-align: center;">20220426
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- imagen del paciente del modal -->
+                                                    <div class="mx-auto col-mx-6 flex-rowx-auto text-center">
+                                                        <button class="btn btn-primary" type="button">Agregar
+                                                            fecha</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- espacio de nota del modal -->
+                                                <div class="col-6 row" style="margin-right:40px;">
+                                                    <div class="d-flex flex-row">
+                                                        <div class="col ms-5">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-floating">
+                                                        <textarea class="textodenotadefinido form-control mt-3"
+                                                            id="floatingTextarea" style="height:400px;"
+                                                            required></textarea>
+                                                        <label for="floatingTextarea2"> Nota: </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 border" style="margin-right:40px;">
+                <div class="d-flex flex-row">
+                    <div class="col ms-5">
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control mt-3" id="floatingTextarea"
+                        style="height: 400px; border-color: rgb(42, 141, 180);" required></textarea>
+                    <label for="floatingTextarea2"> Nota: </label>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Modal agregar nota -->
+        <div class="modal fade modal-xl" id="agregarnota" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Agregar Cita </h1>
+                    </div>
+
+                    <!-- Body del modal -->
+                    <div class="modal-body">
+                        <div class="row d-flex flex-row  contenidoNogta">
+                            <div class="col-5  row imgpaciente">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Pablo Merino</li>
+                                    <li class="list-group-item">Linnette Miranda</li>
+                                    <li class="list-group-item">Paola Eliaz</li>
+                                    <li class="list-group-item">Daniel Gonzalez</li>
+                                    <li class="list-group-item">Manuel fratti</li>
+                                </ul>
+
+                                <!-- imagen del paciente del modal -->
+                                <div class="col-mx-6 flex-rowx-auto text-center">
+                                    <button class="btn btn-primary" type="button">Agregar fecha</button>
+                                </div>
+                            </div>
+
+                            <!-- espacio de nota del modal -->
+                            <div class="col-6 row" style="margin-right:40px;">
+                                <div class="d-flex flex-row">
+                                    <div class="col ms-5">
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="textodenotadefinido form-control mt-3" id="floatingTextarea"
+                                        style="height:400px;" required></textarea>
+                                    <label for="floatingTextarea2"> Nota: </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <br>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Modal Cambio realizado agregar nota-->
+        <div class="modal fade" id="ModalRealizado" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body text-center">
+                        <img src="../../recursos/img/Listo.png" alt="" width="100px">
+                        <p class="mt-2"> ¡Cita guardada! </p>
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cambio realizado editar nota-->
+
+        <div class="modal fade" id="editarnota" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body text-center">
+                        <img src="../../recursos/img/Listo.png" alt="" width="100px">
+                        <p class="mt-2"> Cambios realizados. </p>
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Interrogante -->
+        <div class="modal fade" id="ModalInterrogante" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body text-center">
+                        <img src="../../recursos/img/Interrogante.png" alt="" width="100px">
+                        <p class="mt-2"> ¿Estas seguro de realizar estos cambios? </p>
+                        <hr>
+                        <button type="button" id="BtnInterrogante" class="btn bg-dark text-light me-2"
+                            data-bs-toggle="modal" data-bs-target="#ModalRealizado"> Si </button>
+                        <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal"> No </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cambio realizado de eliminacion-->
+
+        <div class="modal fade" id="ModalRealizado" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body text-center">
+                        <img src="../../recursos/img/Listo.png" alt="" width="100px">
+                        <p class="mt-2"> Se elimino cita. </p>
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-        <!-- Plantilla Boostrap -->
-        <script src="../../recursos/js/bootstrap_js.js"></script>
+        <!-- Modal editar cita-->
 
-        <!-- Plantilla Alerta de modal -->
-        <script src="../../controlles/privada/alerta.js"></script>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header" id="headercolor">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar cita</h1>
+                    </div>
+                    <div class="modal-body row g-3">
+
+                        <div class="col-sm-12 col-md-6 text-center">
+                            <img src="../../recursos/img/Paciente2.png" alt="" class="img-fluid" width="300px  height="
+                                300px>
+                            <h5 class="mt-4">Manuel Fratti</h5>
+                            <button type="button" class="btn btn-secondary mt-3" id="botonPacienteedit">Agregar
+                                fecha</button>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <div class="text-center">
+                                <label for="validationCustom05" class="form-label mt-3">Cantidad de sesiones</label>
+                                <input type="number" class="form-control" id="validationCustom02" placeholder="0"
+                                    min="0" aria-label="Username" aria-describedby="basic-addon2">
+                            </div>
+                            <div class="text-center mt-3">
+                                <label for="appt" class="form-label">Hora:</label>
+                                <input type="time" id="appt" name="appt">
+                            </div>
+                            <div class="mt-3">
+                                <label for="validationCustom02" class="form-label">Precio</label>
+                                <input type="text" class="form-control" id="validationCustom02" aria-label="Username"
+                                    aria-describedby="basic-addon2" required oninput="formatPhoneNumber(this)">
+                                <div class="form-text" id="basic-addon2"></div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <label for="validationCustom01" class="form-label">Síntomas</label>
+                                <input type="text" class="form-control" id="validationCustom01" aria-label="Username"
+                                    aria-describedby="basic-addon1" required>
+                            </div>
+                            <div class="text-center mt-3">
+                                <label for="validationCustom04" class="form-label">Servicios contratados</label>
+                                <select class="form-select">
+                                    <option selected>Masaje Quiropráctico</option>
+                                    <option>Acupuntura</option>
+                                </select>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="button" class="btn btn-secondary" id="botonPacienteedit">Editar
+                                    cita</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer p-4" id="footerColor">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Clase del footer -->
+            <footer id="footer">
+
+            </footer>
+
+
+    </main>
+
+
+
+    <!-- Plantilla Boostrap -->
+    <script src="../../recursos/js/bootstrap_js.js"></script>
+
+    <!-- Plantilla Alerta de modal -->
+    <script src="../../controlles/privada/alerta.js"></script>
+
+    <!-- Javascript validaciones formulario -->
+    <script src="../../controlles/privada/Pacientes.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.3/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.3/daterangepicker.js"></script>
+
+    <div class="calendar-box"></div>
+
+
 </body>
 
 </html>
