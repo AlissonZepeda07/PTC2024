@@ -17,7 +17,7 @@
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 EDITAR
             </button>
-            <!-- Modal -->
+            <!-- Modal editar cita-->
 
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -29,73 +29,72 @@
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar cita</h1>
                         </div>
                         <div class="modal-body row g-3">
-                            
-                                <div class="col-sm-12 col-md-6 ">
-                                    <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
-                                    <h5 class="mt-4"> Manuel Fratti</h5>
-                                    <div class="col-sm-12 col-md-4">
-                                        <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
-                                    Agregar fecha
-                                </button>
+
+                            <div class="col-sm-12 col-md-6 justify-content-center">
+                                <img src="../../recursos/img/Paciente2.png" alt="" width="300px">
+                                <div class="col-sm-12 col-md-7 text-center ">
+                                    <h5 class="mt-4" > Manuel Fratti</h5>
+                                </div>
                                 
+                                <div class="col-sm-12 col-md-4">
+                                    <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
+                                        Agregar fecha
+                                    </button>
+
+                                </div>
                             </div>
-                        </div>
-                            <div class="col-sm-12 col-md-6">
-                                
-                                <label for="validationCustom05" class="form-label mt-3"> Cantidad de sesiones
-                                        </label>
-                                        <input type="number" class="form-control" id="validationCustom02"
-                                            placeholder="0" min="0" aria-label="Username"
-                                            aria-describedby="basic-addon2">
+                            <div class="col-sm-12 col-md-6  ">
+                                <div class="col text-center">
+                                    <label for="validationCustom05" class="form-label mt-3"> Cantidad de sesiones
+                                    </label>
+                                    <input type="number" class="form-control" id="validationCustom02" placeholder="0"
+                                        min="0" aria-label="Username" aria-describedby="basic-addon2">
+                                </div>
+                                <div class="col">
+                                    <label for="appt" class="form-label mt-3">Hora:</label>
+                                    <input type="time" id="appt" name="appt">
+                                    <input type="submit">
 
-                                    
-                                            <label for="appt" class="form-label mt-3">Hora:</label>
-                                                <input type="time" id="appt" name="appt">
-                                                <input type="submit">
-                                            
-                                                <label for="validationCustom02" class="form-label mt-3">Precio</label>
-                                                <input type="text" class="form-control" id="validationCustom02"
-                                                    aria-label="Username"
-                                                    aria-describedby="basic-addon2" required
-                                                    oninput="formatPhoneNumber(this)">
-                                                <div class="form-text" id="basic-addon2">
-                                                </div>
-                                                
-                                              <form class="row g-2 needs-validation" novalidate>
-                                        <label for="validationCustom01" class="form-label"> Nombre </label>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <label for="validationCustom02" class="form-label mt-3">Precio</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        aria-label="Username" aria-describedby="basic-addon2" required
+                                        oninput="formatPhoneNumber(this)">
+                                    <div class="form-text" id="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col text-center ">
+                                    <form class="row g-2 needs-validation" novalidate>
+                                        <label for="validationCustom01" class="form-label"> Sintomas </label>
                                         <input type="text" class="form-control" id="validationCustom01"
-                                            placeholder="Manuel Fratti" aria-label="Username"
+                                           aria-label="Username"
                                             aria-describedby="basic-addon1" required>
-
-                                            <label for="validationCustom04" class="form-label mt-3"> Servicios
-                                                contratados
-                                            </label>
-                                            <select class="form-select">
-                                                <option selected> Masaje Quiropráctico </option>
-                                                <option> Acupuntura </option>
-                                            </select>
-
-                                            
-                                                
-
-                                        <div class="col-sm-12 col-md-4">
-                                            <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
+                                </div>
+                                <div class="col text-center ">
+                                    <label for="validationCustom04" class="form-label mt-3"> Servicios
+                                        contratados
+                                    </label>
+                                    <select class="form-select">
+                                        <option selected> Masaje Quiropráctico </option>
+                                        <option> Acupuntura </option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <button type="button" class="btn btn-secondary  text-center" id="botonPacienteedit">
                                         Editar cita
                                     </button>
-                                        </div>
-                                        
-                                    </form>
-                                
+                                </div>
 
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="modal-footer p-4" id="footerColor">
-
+                                </form>
                             </div>
+
+                        </div>
+                        <div class="modal-footer p-4" id="footerColor">
+
+                        </div>
+                    </div>
                 </div>
-            </div>
         </main>
 
 
