@@ -15,8 +15,8 @@ header.innerHTML = `<div class="menu_color">
                 <nav>
                     <a href="../../../vistas/privada/inicio.html">Inicio</a>
                     <a href="#">Citas</a>
-                    <a href="#">Notas</a>
-                    <a href="#">Pacientes</a>
+                    <a href="../../../vistas/privada/notas_privada.html">Notas</a>
+                    <a href="../../../vistas/privada/pacientes_privada.html">Pacientes</a>
                     <a href="../../../vistas/privada/pagina_principal.html">Sitio publico</a>
                     <a href="../../../vistas/privada/datos.html">Gráficas</a>
                 </nav>
