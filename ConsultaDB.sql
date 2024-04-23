@@ -14,12 +14,12 @@ telefono_cliente VARCHAR (9) NOT NULL,
 nacimiento_cliente DATE NOT NULL,
 usuario_cliente varchar(50) not null unique,
 contrasenia_cliente varchar(500) not null unique
-);
- 
+); 
 CREATE TABLE tb_cargos (
 id_cargo INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-tipo_cargo VARCHAR (20) NOT NULL
+tipo_cargo VARCHAR (50) NOT NULL
 );
+
  
 CREATE TABLE tb_empleados(
 id_empleado INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -31,28 +31,27 @@ telefono_empleado VARCHAR (9) NOT NULL,
 nacimiento_empleado DATE NOT NULL,
 id_cargo 	int,
 FOREIGN KEY (id_cargo) REFERENCES tb_cargos (id_cargo)
-);
+); 
 
 create table tb_niveles_usuarios(
 id_nivel_usuario	int auto_increment primary key,
 nombre_nivel_usuario	varchar(50) unique
 );
 
-create table tb_usurios(
+create table tb_usuarios(
 id_usuario	int auto_increment key,
 nombre_usuario	varchar(50) unique not null,
 contrasenia		varchar(500) not null,
-id_cliente INT ,
-FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente),
+id_empleado INT ,
+FOREIGN KEY (id_empleado) REFERENCES tb_empleados (id_empleado),
 id_nivel_usuario INT ,
 FOREIGN KEY (id_nivel_usuario) REFERENCES tb_niveles_usuarios (id_nivel_usuario)
 );
- 
 
-CREATE TABLE tb_servicios (
+CREATE TABLE tb_servicios(
 id_servicio INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 tipo_servicio VARCHAR (45) NOT NULL,
-Descripcion_servicio VARCHAR (250) NOT NULL
+descripcion_servicio VARCHAR (250) NOT NULL
 );
 
 CREATE TABLE tb_conceptos (
@@ -72,8 +71,8 @@ FOREIGN KEY (id_concepto) REFERENCES tb_conceptos (id_concepto)
 
 CREATE TABLE tb_sesiones (
 id_sesion INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-nombre_cliente VARCHAR (50) NOT NULL,
-apellido_cliente VARCHAR (50) NOT NULL,
+id_cliente int NOT NULL,
+FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente),
 sesiones_cliente VARCHAR (50) NOT NULL,
 molestias_cliente VARCHAR (100) NULL,
 antecedentes_cliente VARCHAR (50) NULL,
@@ -120,4 +119,3 @@ FOREIGN KEY (id_empleado) REFERENCES tb_empleados (id_empleado),
 id_cita	int,
 foreign key (id_cita) references tb_citas (id_cita)
 );
-
