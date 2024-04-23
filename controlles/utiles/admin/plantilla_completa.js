@@ -19,6 +19,7 @@ header.innerHTML = `<div class="menu_color">
                     <a href="../../../vistas/privada/pacientes_privada.html">Pacientes</a>
                     <a href="../../../vistas/privada/pagina_principal.html">Sitio publico</a>
                     <a href="../../../vistas/privada/datos.html">Gráficas</a>
+                    <a href="../../../vistas/privada/comentarios.html">Comentarios</a>
                 </nav>
                 <label for="btn-menu">✖️</label>
             </div>
