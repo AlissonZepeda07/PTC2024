@@ -13,11 +13,12 @@ header.innerHTML = `<div class="menu_color">
         <div class="containerzzz-menu">
             <div class="cont-menu">
                 <nav>
-                    <a href="#">Inicio</a>
+                    <a href="../../../vistas/privada/inicio.html">Inicio</a>
                     <a href="#">Citas</a>
                     <a href="#">Notas</a>
                     <a href="#">Pacientes</a>
-                    <a href="#">Gráficas</a>
+                    <a href="../../../vistas/privada/pagina_principal.html">Sitio publico</a>
+                    <a href="../../../vistas/privada/datos.html">Gráficas</a>
                 </nav>
                 <label for="btn-menu">✖️</label>
             </div>
