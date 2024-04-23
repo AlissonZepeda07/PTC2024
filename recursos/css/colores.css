@@ -1,5 +1,14 @@
 /*Color de objetos del header*/
 
+main {
+    margin-top: 130px;
+    /* Márgen superior de 60 px */
+}
+
+.footer_emergencia{
+    margin-top: 170px;
+}
+
 header {
     position: fixed;
     top: 0;
