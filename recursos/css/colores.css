@@ -159,3 +159,11 @@
     background-color: #f0ecec
     ;
 }
+
+.invert-hover img {
+    transition: filter 0.3s ease;
+}
+
+.invert-hover img:hover {
+    filter: invert(100%); 
+}
