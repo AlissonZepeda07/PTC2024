@@ -38,6 +38,42 @@ function formatPhoneNumber(input) {
     }
 }
 
+//Codigo de validacion de campo email
+function formatEmail(input) {
+
+    //Obtener el valor actual del campo de entrada
+    let Email = input.value;
+
+    // Validar formato de correo electrónico ABC@
+    var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+    if (!emailPattern.test(Email)) {
+
+        // Mostrar mensaje de error
+
+        return false;
+    }
+
+    // Establecer el valor formateado en el campo de entrada
+    input.value = Email;
+}
+
+//codigo de validacion de campo de contraseña
+function formatPassword(input) {
+
+    let Contraseña = input.value;
+
+    // Validar longitud mínima de contraseña
+    if (Contraseña.length < 8) {
+
+        // Mostrar mensaje de error
+
+        return false;
+    }
+
+    // Establecer el valor formateado en el campo de entrada
+    input.value = Contraseña;
+}
+
 // Codigo de validacion campos vacios
 (() => {
     'use strict'
@@ -61,8 +97,8 @@ function formatPhoneNumber(input) {
                         modalInterrogante.hide();
                     }, 10);
                 });
-            } 
-            
+            }
+
             else {
                 event.preventDefault(); // Detiene el envío del formulario si la validación falla
                 event.stopPropagation();
