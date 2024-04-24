@@ -65,7 +65,7 @@ FOREIGN KEY (id_servicio) REFERENCES tb_servicios (id_servicio)
 CREATE TABLE tb_preguntas(
 id_pregunta INT  AUTO_INCREMENT PRIMARY KEY,
 nombre_pregunta VARCHAR (250) NOT NULL,
-respuesta_pregunta VARCHAR (255) NOT NULL,
+contenido_pregunta VARCHAR (255) NOT NULL,
 imagen_pregunta VARCHAR(100)NOT NULL,
 id_cliente INT ,
 FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente)
