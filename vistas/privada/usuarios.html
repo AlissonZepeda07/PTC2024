@@ -23,7 +23,7 @@
             <div class="col-lg-6 text-end">
 
                 <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop03"><img src="../../recursos/img/admin/mas.png" class="mx-1"
+                data-bs-target="#agregar_usuario"><img src="../../recursos/img/admin/mas.png" class="mx-1"
                         width="30px">Agregar Usuario</button>
 
                 <button type="button" class="btn btn-outline-danger invert-hover">
@@ -120,8 +120,58 @@
 
     </footer>
 
-    <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
+    <!-- Modal agregar usuario -->
+    <div class="modal fade" id="agregar_usuario" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- tamaño grande -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar usuario</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+
+
+                    <form class="form-floating">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputValue1"
+                                placeholder="Nombre usuario">
+                            <label for="floatingInputValue1">Nombre empleado</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Seleccione empleado</option>
+                                <option value="1">Juan</option>
+                                <option value="2">Jose</option>
+                                <option value="3">Prieto</option>
+                            </select>
+                            <label for="floatingSelect">Seleccione el rol del empleado</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Nivel usuario</option>
+                                <option value="1">Administrador</option>
+                                <option value="2">medico</option>
+                                <option value="3">usuario</option>
+                            </select>
+                            <label for="floatingSelect">Seleccione el nivel usuario</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar datos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
     <script src="../../recursos/js/bootstrap_js.js"></script>
+    <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
 </body>
 
 </html>
