@@ -29,11 +29,8 @@ header.innerHTML = `<div class="menu_color">
         <img src="../../recursos/img/icono.png" alt="">
     </div>
 
-    <div class="col-sm-1 col-md-1 col-lg-1 text-center">
-        <a class="boton" href="#">
-            <img src="../../recursos/img/admin/usuario.png" width="80px" alt="Descripción de la imagen">
-        </a>
-    </div>
+</button>
+    
 </div>
 </div>`
 
