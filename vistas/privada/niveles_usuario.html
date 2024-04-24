@@ -22,16 +22,18 @@
             </div>
             <div class="col-lg-6 text-end">
 
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop03"><img src="../../recursos/img/admin/mas.png" class="mx-1"
-                        width="30px">Agregar Nivel Usuario</button>
+                <button type="button" class="btn btn-primary btn-lg me-2" data-bs-toggle="modal"
+                    data-bs-target="#agregar_nivel"><img src="../../recursos/img/admin/mas.png" class="me-2"
+                        width="30px">Nivel usuario
+                </button>
 
                 <button type="button" class="btn btn-outline-danger invert-hover">
                     <img src="../../recursos/img/admin/basura_negro.png" width="30px" alt="Eliminar">
                 </button>
 
 
-                <button type="button" class="btn btn-outline-warning invert-hover">
+                <button type="button" class="btn btn-outline-warning invert-hover" data-bs-toggle="modal"
+                data-bs-target="#editar_nivel">
                     <img src="../../recursos/img/admin/lapiz_negro.png" width="30px" alt="Editar">
                 </button>
 
@@ -63,7 +65,7 @@
                         <td>Usuario</td>
                         <td>5</td>
                     </tr>
-                    <tr> 
+                    <tr>
                 </tbody>
             </table>
         </div>
@@ -74,6 +76,81 @@
     <footer class="footer_emergencia">
 
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="agregar_nivel" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- tamaño grande -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar nivel usuario</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+
+
+                    <form class="form-floating">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputValue1"
+                                placeholder="Nombre nivel usuario">
+                            <label for="floatingInputValue1">Nombre nivel usuario</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputValue2"
+                                placeholder="Descripcion">
+                            <label for="floatingInputValue2">Descripcion</label>
+                        </div>
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar datos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal editar nivel -->
+    <div class="modal fade" id="editar_nivel" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- tamaño grande -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar nivel usuario</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+
+
+                    <form class="form-floating">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputValue1"
+                                placeholder="Nombre nivel usuario" value="ejemplo nombre">
+                            <label for="floatingInputValue1">Nombre nivel usuario</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputValue2"
+                                placeholder="Descripcion" value="ejemplo Descripcion">
+                            <label for="floatingInputValue2">Descripcion</label>
+                        </div>
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar datos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
     <script src="../../recursos/js/bootstrap_js.js"></script>
