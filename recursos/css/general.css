@@ -19,3 +19,49 @@
     max-height: 400px;
     border-color: rgb(42, 141, 180);
 }
+
+.cardsServiciosPrivado{
+    width: 18rem;
+}
+
+.Tarjetapreguntaestilo{
+    width: 18rem;
+}
+
+.contactohu{
+    background-color: #043342;
+}
+
+.contactespacio{
+    margin: 90px;
+}
+
+.tarjetacont{
+    width: 100px; 
+    height: 100px; 
+    padding: 20px; 
+    margin-top: 90px;
+}
+
+.tarcontacting{
+    color: aliceblue;
+}
+
+.direcontatcard{
+width: 100px;
+height: 100px;
+padding: 20px;
+margin-top: 90px;
+}
+
+
+ .contactespacio{
+
+    margin: 90px;
+    
+     }   
+
+.contatdirect{
+
+    color: aliceblue;
+ }  
