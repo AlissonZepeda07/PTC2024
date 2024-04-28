@@ -1,21 +1,24 @@
 #headercolor{
-    background-color: #043342;
-    color: #ffffff;
+    background-color: #65AE52;
+    color: #000000;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    border:#303231;
     /*margin: 20px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);*/
 }
  
 #botondescripcion{
-    background-color: #043342;
-    border: #043342;
+    background-color: #65AE52;
+    border: #65AE52;
+    color: #000000;
     margin-bottom: 30px;
 }
  
 #botonbeneficios{
-    background-color: #043342;
-    border: #043342;
+    background-color: #65AE52;
+    border: #65AE52;
+    color: #000000;
     margin-bottom: 30px;
 }
  
@@ -24,10 +27,38 @@
 }
 
 #botoncambios{
-    background-color: #043342;
-    border: #043342;
+    background-color: #65AE52;
+    border: #65AE52;
     margin-top: 90px;
+    color: #000000;
     margin-bottom: 70px; 
-    
-    
+      
+}
+
+#fondoModal{
+background-color: #303231;
+
+}
+#descripcionmodal{
+    background-color: #9fa09f;
+    border: #9fa09f;
+    color: #ffffff;
+}
+
+#textmodal{
+    background-color: #9fa09f;
+    border: #9fa09f;
+    color: #ffffff;
+}
+
+#AgregarImagenposturales{
+    background-color: #9fa09f;
+    border: #9fa09f;
+    color: #ffffff;
+}
+
+#AgregarImagenservicio{
+    background-color: #9fa09f;
+    border: #9fa09f;
+    color: #ffffff;
 }
