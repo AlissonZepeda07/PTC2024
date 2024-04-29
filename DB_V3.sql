@@ -26,7 +26,6 @@ FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente)
 CREATE TABLE tb_empleado(
 id_empleado INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 nombre_empleado VARCHAR (50) NOT NULL,
-apellido_empleado VARCHAR (50) NOT NULL,
 dui_empleado VARCHAR (10) NOT NULL, 
 correo_empleado VARCHAR (100) NOT NULL,
 telefono_empleado VARCHAR (9) NOT NULL,
@@ -81,7 +80,9 @@ numero_seciones int,
 id_cliente INT ,
 FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente), 
 id_servicio int, 
-FOREIGN KEY (id_servicio) REFERENCES tb_servicios (id_servicio)
+FOREIGN KEY (id_servicio) REFERENCES tb_servicios (id_servicio),
+id_empleado INT ,
+FOREIGN KEY (id_empleado) REFERENCES tb_empleado (id_empleado)
 );
 
 CREATE TABLE tb_nombres_tratamientos (
