@@ -60,7 +60,7 @@ header {
 /*colores de objetos del footer*/
 
 .footer_color_boton {
-    background-color: #6CB559;
+    background-color: #249b07;
 }
 
 .footer_color_boton:hover {
@@ -112,7 +112,7 @@ header {
 }
 
 .color_fondo {
-    background-color: #6CB559;
+    background-color: #249b07;
 }
 
 /*menulateral*/
@@ -143,7 +143,7 @@ header {
 .cont-menu {
     width: 100%;
     max-width: 250px;
-    background: #6CB559;
+    background: #249b07;
     height: 100%;
     position: fixed;
     transition: all 500ms ease;
@@ -170,7 +170,7 @@ header {
 
 .cont-menu nav a:hover {
     border-left: 5px solid #303231;
-    background: #6CB559;
+    background: #249b07;
 }
 
 .cont-menu label {
@@ -188,6 +188,12 @@ header {
     background-color: #303231;
 }
 
+.btn-primary {
+
+background-color: #000000;
+border-color: #000000;
+}
+
 .invert-hover img {
     transition: filter 0.3s ease;
 }
@@ -197,14 +203,14 @@ header {
 }
 
 .color_verde {
-    background-color: #28930D;
+    background-color: #249b07;
 }
 .texto_verde{
-    color: #28930D;
+    color: #249b07;
 }
 
 .color_verde:hover {
-    border: 2px solid #28930D;
+    border: 2px solid #249b07;
 }
 
 .texto_claro{

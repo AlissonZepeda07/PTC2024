@@ -1,5 +1,5 @@
 #headercolor{
-    background-color: #65AE52;
+    background-color: #249b07;
     color: #000000;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -9,15 +9,15 @@
 }
  
 #botondescripcion{
-    background-color: #65AE52;
-    border: #65AE52;
+    background-color: #249b07;
+    border: #249b07;
     color: #000000;
     margin-bottom: 30px;
 }
  
 #botonbeneficios{
-    background-color: #65AE52;
-    border: #65AE52;
+    background-color: #249b07;
+    border: #249b07;
     color: #000000;
     margin-bottom: 30px;
 }
@@ -27,8 +27,8 @@
 }
 
 #botoncambios{
-    background-color: #65AE52;
-    border: #65AE52;
+    background-color: #249b07;
+    border: #249b07;
     margin-top: 90px;
     color: #000000;
     margin-bottom: 70px; 
