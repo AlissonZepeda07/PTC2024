@@ -2,7 +2,7 @@
 
 const header = document.querySelector("header");
 
-header.innerHTML = `<div class="menu_color">
+header.innerHTML = `<div class="fondo_oscuro">
 <div class="row">
     <div class="col-sm-1 col-md-1 col-lg-1 text-center mt-4">
         <div class="btn-menu ">

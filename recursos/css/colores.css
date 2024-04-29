@@ -64,7 +64,7 @@ header {
 }
 
 .footer_color_boton:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .footer_color_boton img {
@@ -112,7 +112,7 @@ header {
 }
 
 .color_fondo {
-    background-color: #303231;
+    background-color: #6CB559;
 }
 
 /*menulateral*/
@@ -184,7 +184,7 @@ header {
 
 /*fin menu lateral*/
 
-.menu_color {
+.fondo_oscuro {
     background-color: #303231;
 }
 
@@ -207,14 +207,6 @@ header {
     border: 2px solid #28930D;
 }
 
-.modalfondo {
-    background-color: #303231;
-}
-
-.agregarpacientenota{
-    background-color: #6CB559;
-}
-
-.nombrespan{
-    color: #fff;
+.texto_claro{
+    color: #ECECEC;
 }
