@@ -5,7 +5,7 @@ body{
 
 
 main {
-    margin-top: 90px;
+    margin-top: 130px;
     /* Márgen superior de 60 px */
 }
 
@@ -113,6 +113,10 @@ header {
 
 .color_fondo {
     background-color: #249b07;
+}
+
+.fondo_oscuro_modal{
+    background-color: #9FA09F;
 }
 
 /*menulateral*/
