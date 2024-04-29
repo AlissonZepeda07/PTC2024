@@ -1,24 +1,26 @@
 #headercolor{
     background-color: #249b07;
-    color: #000000;
+    color: #ffffff;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border:#303231;
     /*margin: 20px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);*/
 }
- 
+
 #botondescripcion{
-    background-color: #249b07;
-    border: #249b07;
-    color: #000000;
+    width: 200px;
+    background-color: #000000;
+    border: #000000;
+    color: #ffffff;
     margin-bottom: 30px;
 }
  
 #botonbeneficios{
-    background-color: #249b07;
-    border: #249b07;
-    color: #000000;
+    width: 200px;
+    background-color: #000000;
+    border: #000000;
+    color: #ffffff;
     margin-bottom: 30px;
 }
  
@@ -27,16 +29,18 @@
 }
 
 #botoncambios{
-    background-color: #249b07;
-    border: #249b07;
+    height: 40px;
+    width: 250px;
+    background-color: #000000;
+    border: #000000;
     margin-top: 90px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 70px; 
       
 }
 
 #fondoModal{
-background-color: #303231;
+background-color: #2b2b28;
 
 }
 #descripcionmodal{
