@@ -91,7 +91,7 @@ a{
 
 .calendar .leftCol{
   width: 40%;
-  background-color: #043342;
+  background-color: #6CB559;
 }
 
 .calendar .noteList li{
@@ -111,7 +111,7 @@ a{
 }
 
 .calendar .notes input{
-  background-color: #55c8ee;
+  background-color: #336726;
   color: #ffffff;
   border: none;
   width: 200px;
@@ -210,7 +210,7 @@ a{
 }
 
 .calendar .days li .event{
-  color: #55c8ee;
+  color: #336726;
 }
 
 

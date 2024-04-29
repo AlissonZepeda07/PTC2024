@@ -64,7 +64,7 @@ header {
 }
 
 .footer_color_boton:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .footer_color_boton img {
@@ -205,4 +205,16 @@ header {
 
 .color_verde:hover {
     border: 2px solid #28930D;
+}
+
+.modalfondo {
+    background-color: #303231;
+}
+
+.agregarpacientenota{
+    background-color: #6CB559;
+}
+
+.nombrespan{
+    color: #fff;
 }
