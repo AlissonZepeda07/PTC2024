@@ -77,6 +77,7 @@ CREATE TABLE tb_citas(
 id_cita INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 fecha_cita datetime not null,
 estado_cita	bool,
+numero_seciones int,
 id_cliente INT ,
 FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente), 
 id_servicio int, 
@@ -85,7 +86,7 @@ FOREIGN KEY (id_servicio) REFERENCES tb_servicios (id_servicio)
 
 CREATE TABLE tb_nombres_tratamientos (
 id_tratamiento INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-tipo_de_tratamiento VARCHAR (75) NOT NULL,
+nombre_tratamiento VARCHAR (75) NOT NULL,
 notas_adicionales VARCHAR (250),
 id_cita INT,
 FOREIGN KEY (id_cita) REFERENCES tb_citas(id_cita)
@@ -97,4 +98,3 @@ contenido_comentario VARCHAR (250) NOT NULL,
 id_cliente INT ,
 FOREIGN KEY (id_cliente) REFERENCES tb_clientes (id_cliente)
 );
-
