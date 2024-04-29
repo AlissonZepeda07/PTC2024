@@ -3,8 +3,14 @@ body{
     background-color: #9FA09F;
 }
 
+
 main {
-    margin-top: 130px;
+    margin-top: 90px;
+    /* Márgen superior de 60 px */
+}
+
+.mainNotas {
+    margin-top: 90px;
     /* Márgen superior de 60 px */
 }
 
