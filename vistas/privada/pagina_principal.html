@@ -37,6 +37,7 @@
                 <h1>Servicios</h1>
                 <img src="../../recursos/img/admin/Titulos_Inicio.png" alt="">
             </div>
+            <br>
             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop03"><img src="../../recursos/img/admin/mas.png" class="me-3"
                     width="50px">Agregar servicios
@@ -1058,10 +1059,10 @@
 
         <!-- Modal's de preguntas frecuentes-->
         <!-- Modal de preguntas editar  -->
-        <div class="modal fade" id="editarpreguntafrecuente" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="editarpreguntafrecuente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
-                <div class="modal-content">
+                <div class="modal-content" id="fondoModal">
 
                     <!-- Header del modal -->
                     <div class="modal-header" id="headercolor">
@@ -1071,7 +1072,7 @@
                     </div>
 
                     <!-- Body del modal -->
-                    <div class="modal-body">
+                    <div class="modalfondo modal-body">
                         <div class="container">
                             <div class="row d-flex flex-row">
                                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -1105,7 +1106,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12">
-                        <div class="col text-center">
+                        <div class="modalfondocol text-center">
 
                             <!-- boton de realizar cambios del modal -->
                             <button type="button" class="btn btn-primary " id="botoncambios" data-bs-toggle="modal"
