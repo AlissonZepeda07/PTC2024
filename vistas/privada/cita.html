@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#ModalAgregarDefinido" >
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -287,7 +287,7 @@
         <div class="modal fade" id="ModalEditarCita" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
-                <div class="modal-content">
+                <div class="modal-content" id="modalcitaeditar">
                     <div class="modal-header" id="headercolor">
                         <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
                                 src="../../recursos/img/Atras.png" alt="" width="20px"></button>
@@ -295,16 +295,16 @@
                     </div>
                     <div class="modal-body row g-3">
 
-                        <div class="col-sm-12 col-md-6 text-center">
-                            <img src="../../recursos/img/Paciente2.png" alt="" class="img-fluid" width="300px  height="
+                        <div class="col-sm-12 col-md-6 text-center" >
+                            <img src="../../recursos/img/admin/Paciente2.png" alt="" class="img-fluid" width="300px  height="
                                 300px>
-                            <h5 class="mt-4">Manuel Fratti</h5>
+                            <h5 class="mt-4"id="editaruser">Manuel Fratti</h5>
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <a class="btn btn-primary" href="dalendario_pacientes.html" role="button">Agregar cumpleaños</a>
+                                <a class="btn btn-primary" href="dalendario_pacientes.html" role="button" id="botoncumple">Agregar cumpleaños</a>
                               </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6" id="texto">
                             <div class="text-center">
                                 <label for="validationCustom05" class="form-label mt-3">Cantidad de sesiones</label>
                                 <input type="number" class="form-control" id="validationCustom02" placeholder="0"
@@ -346,22 +346,20 @@
                 </div>
             </div>
             <!-- Clase del footer -->
-            <footer id="footer">
-
-            </footer>
+            
         </div>
         <!-- Modal agregar cita-->
 
         <div class="modal fade" id="staticBackdrop02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog ">
-                <div class="modal-content">
+                <div class="modal-content" id="modalcitaeditar">
                     <div class="modal-header" id="headercolor">
                         <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
                                 src="../../recursos/img/Atras.png" alt="" width="20px"></button>
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Agregar cita</h1>
                     </div>
-                    <div class="modal-body row g-3">
+                    <div class="modal-body row g-3" id="texto">
                         <div class="row align-items-start">
                             <div class="col-6">
                                 <div class="text-center">
@@ -429,9 +427,9 @@
 
     </main>
 
-<footer>
+    <footer id="footer">
 
-            </footer>
+    </footer>
 
     <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
     <script src="../../recursos/js/bootstrap_js.js"></script>
