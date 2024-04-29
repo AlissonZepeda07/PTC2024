@@ -29,7 +29,7 @@
             <br>
             <br>
             <br>
-            <div class="col-6 row container-fluid">
+            <div class="col-sm-6 row">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -42,7 +42,7 @@
             <div class="row justify-content-center">
 
                 <!-- Cartas de perfiles -->
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="cartaPacientePrivado card border-2 border-info-subtle m-3">
+                <div class="cartaPacientePrivado card m-3">
                     <div class="card-header bg-white">
                         <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3 pb-3"
                             alt="...">
@@ -270,39 +270,34 @@
                     <div class="modalfondo modal-body">
                         <div class="container mt-3 mb-5">
                             <div class="d-flex flex-row">
-                                <div class="container-fluid">
-                                    <div class="row text-white text-center">
+                                <div class="container">
+                                    <div class="row text-white">
 
                                         <!-- imagen del paciente del modal -->
-                                        <div class="modal-body">
-                                            <div class="row d-flex flex-row contenidoNogta">
-                                                <div class="col row imgpaciente ms-4">
-                                                    <div class="card" style="width: 17rem; height:19rem;">
-                                                        <br>
-                                                        <img src="../../recursos/img/admin/Paciente1.png"
-                                                            class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                            <p class="card-text" style="text-align: center;">Juan
-                                                                Rodriguez
-                                                            </p>
-                                                            <p class="card-text" style="text-align: center;">20220426
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="gap-2 col-6 mx-auto">
-                                                        <a class="btn btn-primary" href="dalendario_pacientes.html"
-                                                            role="button">Agregar cumpleaños</a>
+                                        <div class="row d-flex flex-row contenidoNogta">
+                                            <div class="col row imgpaciente ms-4">
+                                                <div class="card" style="width: 17rem; height:19rem;">
+                                                    <br>
+                                                    <img src="../../recursos/img/admin/Paciente1.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text" style="text-align: center;">Juan Rodriguez </p>
+                                                        <p class="card-text" style="text-align: center;">20220426 </p>
                                                     </div>
                                                 </div>
+                                                <div class="col-6 ms-4">
+                                                    <a class="btn btn-primary" href="dalendario_pacientes.html"
+                                                        role="button"> Agregar cumpleaños
+                                                    </a>
+                                                </div>
+                                            </div>
 
-                                                <!-- espacio de nota del modal -->
-                                                <div class="col-6 row" style="margin-right:40px;">
-                                                    <div class="form-floating">
-                                                        <textarea class="textodenotadefinido form-control mt-3"
-                                                            id="floatingTextarea" style="height:400px;"
-                                                            required></textarea>
-                                                        <label for="floatingTextarea2"> Nota: </label>
-                                                    </div>
+                                            <!-- espacio de nota del modal -->
+                                            <div class="col-6 row" style="margin-right:40px;">
+                                                <div class="form-floating">
+                                                    <textarea class="textodenotadefinido form-control mt-3"
+                                                        id="floatingTextarea" style="height:400px;" required></textarea>
+                                                    <label for="floatingTextarea2"> Nota: </label>
                                                 </div>
                                             </div>
                                         </div>
