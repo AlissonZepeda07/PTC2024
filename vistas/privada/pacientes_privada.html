@@ -404,19 +404,18 @@
                                                 placeholder="Manuel Fratti" aria-label="Username"
                                                 aria-describedby="basic-addon1" required>
 
-                                            <label for="validationCustom02" class="form-label mt-3">Número de
-                                                teléfono</label>
+                                            <label for="validationCustom02" class="form-label mt-3">Número de teléfono</label>
                                             <input type="text" class="form-control" id="telefono"
                                                 placeholder="0000-0000" aria-label="Username"
                                                 aria-describedby="basic-addon2" required
-                                                oninput="formatPhoneNumber(this)">
+                                                onblur="formatPhoneNumber(this)">
                                             <div class="form-text" id="basic-addon2"> El formato debe ser 0000-0000.
                                             </div>
 
                                             <label for="validationCustom03" class="form-label mt-3"> Citas realizadas
                                             </label>
                                             <input type="number" class="form-control" id="validationCustom03"
-                                                placeholder="0" min="0" aria-label="Username"
+                                                placeholder="1" min="1" aria-label="Username"
                                                 aria-describedby="basic-addon2">
 
                                             <label for="validationCustom04" class="form-label mt-3"> Servicios
@@ -427,11 +426,10 @@
                                                 <option> Acupuntura </option>
                                             </select>
 
-                                            <label for="validationCustom05" class="form-label mt-3"> Secciones
-                                                pendientes
+                                            <label for="validationCustom05" class="form-label mt-3"> Secciones pendientes
                                             </label>
                                             <input type="number" class="form-control" id="validationCustom04"
-                                                placeholder="0" min="0" aria-label="Username"
+                                                placeholder="1" min="1" aria-label="Username"
                                                 aria-describedby="basic-addon2">
 
                                             <label for="validationCustom05" class="form-label mt-3"> Correo electronico
@@ -449,8 +447,7 @@
 
                                             <label for="validationCustom01" class="form-label mt-3"> Dui: </label>
                                             <input type="text" class="form-control" id="dui" placeholder="00000000-0"
-                                                aria-label="Username" aria-describedby="basic-addon1" required
-                                                oninput="formatDui(this)">
+                                                aria-label="Username" aria-describedby="basic-addon1" required>
                                             <div class="form-text" id="basic-addon2"> El formato debe ser 00000000-0
                                             </div>
 
@@ -464,7 +461,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">
-                                        <button class="btn bg-dark text-light ms-5 mt-4" type="submit"> Agregar paciente
+                                        <button class="btn bg-dark text-light ms-5 mt-4" type="submit" id="btnsubmit"> Agregar paciente
                                         </button>
                                     </div>
                                 </form>
@@ -513,7 +510,7 @@
                                                 <label for="validationCustom01" class="form-label mt-3"> Dui: </label>
                                                 <input type="text" class="form-control" id="dui"
                                                     placeholder="00000000-0" aria-label="Username"
-                                                    aria-describedby="basic-addon1" required oninput="formatDui(this)">
+                                                    aria-describedby="basic-addon1" required onblur="formatDui(this)">
                                                 <div class="form-text" id="basic-addon2"> El formato debe ser 00000000-0
                                                 </div>
                                             </div>
@@ -543,7 +540,7 @@
                                             <input type="text" class="form-control" id="telefono"
                                                 placeholder="0000-0000" aria-label="Username"
                                                 aria-describedby="basic-addon2" required
-                                                oninput="formatPhoneNumber(this)">
+                                                onblur="formatPhoneNumber(this)">
                                             <div class="form-text" id="basic-addon2"> El formato debe ser 0000-0000.
                                             </div>
 
@@ -572,7 +569,7 @@
                                             </label>
                                             <input type="text" class="form-control mb-3" id="email"
                                                 placeholder="Manuelfratti@gmail.com" aria-label="Username"
-                                                aria-describedby="basic-addon1" required oninput="formatEmail(this)">
+                                                aria-describedby="basic-addon1" required onblur="formatEmail(this)">
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">

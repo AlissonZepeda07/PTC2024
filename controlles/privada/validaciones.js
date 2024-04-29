@@ -129,37 +129,88 @@ function formatDui(input) {
     }
 }
 
-// Codigo de validacion campos vacios
+
+// Lógica para validar el formulario y habilitar el botón de submit
 (() => {
     'use strict'
 
-    // Id
-    const forms = document.querySelectorAll('.needs-validation')
+    // Obtener todos los formularios con la clase 'needs-validation'
+    const forms = document.querySelectorAll('.needs-validation');
 
-    // Loop de validacion y submision del formulario
-    Array.from(forms).forEach(form => {
+    // Iterar sobre cada formulario
+    forms.forEach(form => {
+
+        // Obtener el botón de submit dentro del formulario
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        // Desactivar el botón de submit por defecto
+        submitButton.disabled = true;
+
+        // Agregar evento de 'input' a cada campo de entrada para verificar si el botón debe estar activo
+        form.addEventListener('input', () => {
+            
+            // Obtener todos los campos de entrada dentro del formulario actual
+            const inputs = form.querySelectorAll('input');
+
+            // Variable para controlar si todos los campos están llenos y en un formato correcto
+            let allFieldsValid = true;
+
+            // Iterar sobre cada campo de entrada y verificar si está lleno y en un formato correcto
+            inputs.forEach(input => {
+                if (input.value.trim() === '' || input.classList.contains('is-invalid')) {
+                    allFieldsValid = false;
+                }
+            });
+
+            // Habilitar o deshabilitar el botón de submit según si todos los campos están llenos y en un formato correcto
+            submitButton.disabled = !allFieldsValid;
+        });
+
+        // Agregar el evento de 'submit' a cada formulario
         form.addEventListener('submit', event => {
-            if (form.checkValidity()) { // Verifica si la validación es exitosa
+            // Detener el envío del formulario por defecto
+            event.preventDefault();
 
-                // Abre el modal de confirmación aquí
+            // Obtener todos los campos de entrada dentro del formulario actual
+            const inputs = form.querySelectorAll('input');
+
+            // Iterar sobre cada campo de entrada y realizar la validación
+            inputs.forEach(input => {
+                if (input.id === 'telefono') {
+                    formatPhoneNumber(input);
+                } 
+                
+                else if (input.id === 'email') {
+                    formatEmail(input);
+                } 
+                
+                else if (input.id === 'contraseña') {
+                    formatPassword(input);
+                } 
+                
+                else if (input.id === 'dui') {
+                    formatDui(input);
+                }
+            });
+
+            // Verificar si el formulario es válido
+            if (form.checkValidity()) {
+
+                // Si el formulario es válido, abrir el modal de confirmación
                 const modalInterrogante = new bootstrap.Modal(document.getElementById('ModalInterrogante'));
                 modalInterrogante.show();
 
                 BtnInterrogante.addEventListener('click', () => {
 
-                    // Programa el temporizador para cerrar el modal después de 1 milisegundo
+                    // Programar el temporizador para cerrar el modal después de 1 milisegundo
                     setTimeout(function () {
                         modalInterrogante.hide();
                     }, 10);
                 });
             }
 
-            else {
-                event.preventDefault(); // Detiene el envío del formulario si la validación falla
-                event.stopPropagation();
-            }
-
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+            // Agregar la clase 'was-validated' al formulario
+            form.classList.add('was-validated');
+        });
+    });
+})();
