@@ -1,4 +1,7 @@
 /*Color de objetos del header*/
+body{
+    background-color: #9FA09F;
+}
 
 main {
     margin-top: 130px;
@@ -51,7 +54,7 @@ header {
 /*colores de objetos del footer*/
 
 .footer_color_boton {
-    background-color: #043342;
+    background-color: #6CB559;
 }
 
 .footer_color_boton:hover {
@@ -103,7 +106,7 @@ header {
 }
 
 .color_fondo {
-    background-color: #043342;
+    background-color: #6CB559;
 }
 
 /*menulateral*/
@@ -134,7 +137,7 @@ header {
 .cont-menu {
     width: 100%;
     max-width: 250px;
-    background: #043342;
+    background: #6CB559;
     height: 100%;
     position: fixed;
     transition: all 500ms ease;
@@ -154,14 +157,14 @@ header {
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: #fff;
+    color: #303231;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
 }
 
 .cont-menu nav a:hover {
-    border-left: 5px solid #fff;
-    background: #043342;
+    border-left: 5px solid #303231;
+    background: #6CB559;
 }
 
 .cont-menu label {
@@ -176,7 +179,7 @@ header {
 /*fin menu lateral*/
 
 .menu_color {
-    background-color: #f0ecec;
+    background-color: #303231;
 }
 
 .invert-hover img {
@@ -185,4 +188,15 @@ header {
 
 .invert-hover img:hover {
     filter: invert(100%);
+}
+
+.color_verde {
+    background-color: #28930D;
+}
+.texto_verde{
+    color: #28930D;
+}
+
+.color_verde:hover {
+    border: 2px solid #28930D;
 }
