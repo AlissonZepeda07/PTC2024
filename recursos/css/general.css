@@ -5,8 +5,13 @@
 }
 
 .textopacienteprivado {
+<<<<<<< Updated upstream
     height: 287px;
     max-height: 287px;
+=======
+    height: 300px;
+    max-height: 300px;
+>>>>>>> Stashed changes
 }
 
 .textodenotadefinido {

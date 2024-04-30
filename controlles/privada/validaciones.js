@@ -154,12 +154,7 @@ function formatDui(input) {
                 });
             }
 
-            else {
-                event.preventDefault(); // Detiene el envío del formulario si la validación falla
-                event.stopPropagation();
-            }
-
             form.classList.add('was-validated')
-        }, false)
+        })
     })
 })()
