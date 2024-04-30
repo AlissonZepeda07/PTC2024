@@ -100,8 +100,6 @@ function formatDui(input) {
     let duiPattern = /^\d{8}-\d$/;
     if (!duiPattern.test(Dui)) {
 
-        // Mostrar mensaje de error
-        input.classList.add("is-invalid");
     }
 
     // En caso de pasar el test del formato
@@ -148,7 +146,7 @@ function formatDui(input) {
 
         // Agregar evento de 'input' a cada campo de entrada para verificar si el botón debe estar activo
         form.addEventListener('input', () => {
-            
+
             // Obtener todos los campos de entrada dentro del formulario actual
             const inputs = form.querySelectorAll('input');
 
@@ -178,16 +176,16 @@ function formatDui(input) {
             inputs.forEach(input => {
                 if (input.id === 'telefono') {
                     formatPhoneNumber(input);
-                } 
-                
+                }
+
                 else if (input.id === 'email') {
                     formatEmail(input);
-                } 
-                
+                }
+
                 else if (input.id === 'contraseña') {
                     formatPassword(input);
-                } 
-                
+                }
+
                 else if (input.id === 'dui') {
                     formatDui(input);
                 }
