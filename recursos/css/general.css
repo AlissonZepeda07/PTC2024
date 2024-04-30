@@ -16,6 +16,7 @@
     height: auto;
     max-height: 400px;
     border-color: rgb(42, 141, 180);
+    height:400px !important;
 }
 
 .textodenotasgregar {
@@ -97,4 +98,16 @@
 .modaleditarusuPerfil{
 
     background-color: #303231;
+}
+
+.notatarjetaeditablenota
+{
+
+    width: 17rem; 
+    height:19rem;
+}
+.cardfotonota{
+
+    width: 17rem; 
+    height:19rem;
 }
