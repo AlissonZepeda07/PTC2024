@@ -44,7 +44,7 @@
             <div class="row justify-content-center">
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -131,7 +131,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -160,7 +160,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -189,7 +189,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -218,7 +218,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido">
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="card border-2 border-info m-3" style="width: 18rem;" data-bs-toggle="modal"
-                    data-bs-target="#ModalAgregarDefinido" >
+                    data-bs-target="#vercita">
                     <img src="../../recursos/img/admin/Paciente1.png" class="card-img-top ps-3 pe-3 pt-3" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center"> Juan Rodriguez </h5>
@@ -295,13 +295,17 @@
                     </div>
                     <div class="modal-body row g-3">
 
-                        <div class="col-sm-12 col-md-6 text-center" >
-                            <img src="../../recursos/img/admin/Paciente2.png" alt="" class="img-fluid" width="300px  height="
-                                300px>
-                            <h5 class="mt-4"id="editaruser">Manuel Fratti</h5>
+                        <div class="col-sm-12 col-md-6 text-center">
+                            <img src="../../recursos/img/admin/Paciente2.png" alt="" class="img-fluid"
+                                width="300px  height=" 300px>
+                            <h5 class="mt-4" id="editaruser">Manuel Fratti</h5>
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <a class="btn btn-primary" href="dalendario_pacientes.html" role="button" id="botoncumple">Agregar cumpleaños</a>
-                              </div>
+                                <p class="text-light">fecha nacimiento</p>
+                                <form action="https://example.com">
+                                    <input type="date" name="bday" />
+                                    </label>
+                                </form>
+                            </div>
                         </div>
 
                         <div class="col-sm-12 col-md-6" id="texto">
@@ -346,8 +350,9 @@
                 </div>
             </div>
             <!-- Clase del footer -->
-            
+
         </div>
+
         <!-- Modal agregar cita-->
 
         <div class="modal fade" id="staticBackdrop02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -384,27 +389,32 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="text-center mt-3">              
-                                        <label for="Texto01" class="form-label">Síntomas</label>
-                                        <textarea class="form-control" id="Texto01" placeholder="Texto" aria-label="Texto" rows="3"></textarea>
-                                  
+                                <div class="text-center mt-3">
+                                    <label for="Texto01" class="form-label">Síntomas</label>
+                                    <textarea class="form-control" id="Texto01" placeholder="Texto" aria-label="Texto"
+                                        rows="3"></textarea>
+
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="text-center mt-3">
-                                    <button type="button" class="btn btn-secondary" id="botonPacienteedit">Fecha</button>
+                                    <p>fecha nacimiento</p>
+                                    <form action="https://example.com">
+                                        <input type="date" name="bday" />
+                                        </label>
+                                    </form>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="text-center mt-3">
-                                <label for="validationCustom04" class="form-label">Servicios contratados</label>
-                                <select class="form-select">
-                                    <option selected>Masaje Quiropráctico</option>
-                                    <option>Acupuntura</option>
-                                </select>
+                                    <label for="validationCustom04" class="form-label">Servicios contratados</label>
+                                    <select class="form-select">
+                                        <option selected>Masaje Quiropráctico</option>
+                                        <option>Acupuntura</option>
+                                    </select>
+                                </div>
                             </div>
-                            </div>
-                            
+
                             <div class="text-center mt-3">
                                 <button type="button" class="btn btn-secondary" id="botonPacienteedit">Cita
                                     realizada</button>
@@ -418,8 +428,110 @@
                     </div>
                 </div>
             </div>
-            <!-- Clase del footer -->
-            
+        </div>
+
+
+        <!-- Modal ver notas paciente definido-->
+        <div class="modal fade modal-xl" id="vercita" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Editar nota </h1>
+                    </div>
+
+                    <!-- Body del modal -->
+                    <div class="modalfondo modal-body">
+                        <div class="container mt-3 mb-5">
+                            <div class="d-flex flex-row">
+                                <div class="container">
+                                    <div class="row text-white">
+
+                                        <!-- imagen del paciente del modal -->
+                                        <div class="row d-flex flex-row contenidoNogta">
+                                            <div class="col row imgpaciente ms-4">
+                                                <div class="cardfotonota card">
+                                                    <br>
+                                                    <img src="../../recursos/img/admin/Paciente1.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-center">Juan Rodriguez
+                                                        </p>
+                                                        <p class="card-text text-center">20220426 </p>
+                                                    </div>
+                                                </div>
+                                                <!-- espacio de notas del modal -->
+                                                <div class="col-6 row m-3">
+                                                    <!-- tarjeta de notas del modal -->
+                                                    <div class="card my-4">
+                                                        <div class="card-body">
+                                                            <div class="text-center">
+                                                                <label for="validationCustom05"
+                                                                    class="form-label mt-3">Cantidad de sesiones:
+                                                                    3</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class=" mt-3">
+                                                                <label for="appt" class="form-label">Hora:</label>
+                                                                <input type="time" id="appt" name="appt">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mt-3">
+                                                                <label for="validationCustom02"
+                                                                    class="form-label">Precio: $20</label>
+                                                                <div class="form-text" id="basic-addon2"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class=" mt-3">
+                                                                <label for="Texto01" class="form-label">Síntomas</label>
+                                                                <p>El paciente presenta fisuras vectebral y dolor fuerte
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class=" mt-3">
+                                                                <p>fecha nacimiento</p>
+                                                                <form action="https://example.com">
+                                                                    <input type="date" name="bday" />
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class=" mt-3">
+                                                                <label for="validationCustom04"
+                                                                    class="form-label">Servicios contratados</label>
+                                                                <p>Masaje preventivo.
+                                                                    <br>
+                                                                    Ajuste vectebral.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Clase del footer -->
+
         </div>
 
 
