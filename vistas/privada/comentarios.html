@@ -48,7 +48,7 @@
                     <p class="card-text">El tratamiento fue increíblemente efectivo. Sentí una mejora notable en mi
                         postura y reducción del dolor en poco tiempo. El equipo médico fue profesional y atento durante
                         todo el proceso.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
                     <h5 class="card-title">Tratamiento de escoliosis</h5>
                     <p class="card-text">Después del tratamiento de escoliosis, he notado un cambio significativo en mi
                         postura y menos dolores de espalda</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
                     <h5 class="card-title">Tratamiento de escoliosis</h5>
                     <p class="card-text">El tratamiento de escoliosis me dio confianza en mi cuerpo y me permitió
                         moverme con más libertad.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                     <h5 class="card-title">Tratamiento de escoliosis</h5>
                     <p class="card-text">El proceso para tratar mi escoliosis fue suave y eficaz. Ahora puedo llevar una
                         vida más activa sin dolor.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">El masaje preventivo me dejó totalmente relajado y sin tensiones. Lo recomiendo
                         para mantener el cuerpo en forma.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">Con el masaje preventivo, mis dolores musculares han desaparecido. Ahora me
                         siento más suelto y con energía.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">Gracias al masaje preventivo, mi estrés se ha reducido considerablemente. Es un
                         tratamiento que quiero repetir regularmente.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -111,21 +111,21 @@
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">Gracias al masaje preventivo, mi estrés se ha reducido considerablemente. Es un
                         tratamiento que quiero repetir regularmente.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div><div class="card my-4">
                 <div class="card-body">
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">Gracias al masaje preventivo, mi estrés se ha reducido considerablemente. Es un
                         tratamiento que quiero repetir regularmente.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div><div class="card my-4">
                 <div class="card-body">
                     <h5 class="card-title">Masaje Preventivo</h5>
                     <p class="card-text">Gracias al masaje preventivo, mi estrés se ha reducido considerablemente. Es un
                         tratamiento que quiero repetir regularmente.</p>
-                    <a href="#" class="texto_verde">Eliminar Comentario</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalInterrogante" class="texto_verde">Eliminar Comentario</a>
                 </div>
             </div>
 
@@ -156,12 +156,53 @@
 
     </main>
 
+        <!-- Modal Interrogante -->
+        <div class="modal fade" id="ModalInterrogante" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Body del modal -->
+                <div class="modal-body text-center">
+                    <img src="../../recursos/img/Interrogante.png" alt="" width="100px">
+                    <p class="mt-2"> ¿Estas seguro de eliminar comentario? </p>
+                    <hr>
+                    <button type="button" id="BtnInterrogante" class="btn bg-dark text-light me-2"
+                        data-bs-toggle="modal" data-bs-target="#ModalRealizado"> Si </button>
+                    <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal"> No </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cambio realizado -->
+    <div class="modal fade" id="ModalRealizado" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Body del modal -->
+                <div class="modal-body text-center">
+                    <img src="../../recursos/img/Listo.png" alt="" width="100px">
+                    <p class="mt-2"> eliminando comentario. </p>
+                    <div class="progress">
+                        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
 
     </footer>
 
     <script src="../../controlles/utiles/admin/plantilla_completa.js"></script>
     <script src="../../recursos/js/bootstrap_js.js"></script>
+
+        <!-- Javascript de alerta modal -->
+        <script src="../../controlles/privada/alerta.js"></script>
 </body>
 
 </html>

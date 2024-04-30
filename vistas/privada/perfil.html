@@ -7,6 +7,7 @@
     <title>Quiropráctica Específica </title>
     <link rel="stylesheet" href="../../recursos/css/boostrap_css.css">
     <link rel="stylesheet" href="../../recursos/css/colores.css">
+    <link rel="stylesheet" href="../../recursos/css/general.css">
 </head>
 
 <body>
@@ -15,9 +16,6 @@
     </header>
 
     <main class="container">
-
-
-
         <div class="row container justify-content-center">
             <div class="col-lg-6 my-5">
                 <div class="col-sm-12 col-md-6   text-center">
@@ -31,8 +29,8 @@
                             Empleado
                         </button>
                         <button type="button" class="btn btn-primary btn-lg " data-bs-toggle="modal"
-                            data-bs-target="#agregar_empleado"><img src="../../recursos/img/admin/mas.png" class="me-2"
-                                width="30px">Editar
+                            data-bs-target="#ModalEditarUsuario"><img src="../../recursos/img/admin/mas.png"
+                                class="me-2" width="30px">Editar
                             Usuario
                         </button>
                     </div>
@@ -56,50 +54,73 @@
             </div>
         </div>
 
+        <!-- Modal EditarUsuario -->
+        <div class="modal fade modal-xl" id="ModalEditarUsuario" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header del modal -->
+                    <div class="modal-header bg-dark">
+                        <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="../../recursos/img/Atras.png" alt="" width="20px"></button>
+                        <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Editar paciente </h1>
+                    </div>
+
+                    <!-- Body del modal -->
+                    <div class="modaleditarusuPerfil modal-body">
+                        <div class="container mt-3 mb-2">
+                            <div class="row d-flex flex-row">
+                                <div class="row container justify-content-center">
+                                    <div class="col-lg-6 my-5">
+                                        <div class="col-sm-12 col-md-6   text-center">
+                                            <img src="../../recursos/img/admin/usuario_persona.jpg" height="350px"
+                                                alt="" style="border-radius: 5%; border: 5px solid navy;">
+                                            <div class="row">
+                                                <button type="button" class="btn btn-primary btn-lg my-3"
+                                                    data-bs-toggle="modal" data-bs-target="#ModalInterrogante">Editar
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 my-5">
+
+                                        <h3 class="texto_claro">Nombre Empleado</h3>
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="Usuario_RM" aria-label="Username"
+                                            aria-describedby="basic-addon1" required>
+
+                                        <h3 class="texto_claro">Dui</h3>
+
+                                        <input type="text" class="form-control" id="dui" placeholder="00000000-0"
+                                            aria-label="Username" aria-describedby="basic-addon1" required
+                                            oninput="formatDui(this)">
+                                        <div class="form-text" id="basic-addon2">
+                                        </div>
 
 
+                                        <h3 class="texto_claro">Correo Empleado</h3>
+                                        <input type="text" class="form-control mb-3" id="email"
+                                            placeholder="correoempleado@gmail.com" aria-label="Username"
+                                            aria-describedby="basic-addon1" required oninput="formatEmail(this)">
 
+
+                                        <h3 class="texto_claro">Teléfono Empleado</h3>
+                                        <input type="text" class="form-control" id="telefono" placeholder="0000-0000"
+                                            aria-label="Username" aria-describedby="basic-addon2" required
+                                            oninput="formatPhoneNumber(this)">
+                                        <div class="form-text" id="basic-addon2">
+                                        </div>
+                                        <br>
+                                        <h3 class="texto_claro">Fecha nacimiento</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
     </main>
-
-
-    <div class="row container justify-content-center">
-        <div class="col-lg-6 my-5">
-            <div class="col-sm-12 col-md-6   text-center">
-                <img src="../../recursos/img/admin/usuario_persona.jpg" height="350px" alt=""
-                    style="border-radius: 5%; border: 5px solid navy;">
-                <h1>Usuario_RM</h1>
-                <div class="row">
-                    <button type="button" class="btn btn-primary btn-lg my-3" data-bs-toggle="modal"
-                        data-bs-target="#agregar_empleado"><img src="../../recursos/img/admin/mas.png" class="me-2"
-                            width="30px">Editar
-                        Empleado
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg " data-bs-toggle="modal"
-                        data-bs-target="#agregar_empleado"><img src="../../recursos/img/admin/mas.png" class="me-2"
-                            width="30px">Editar
-                        Usuario
-                    </button>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-lg-6 my-5">
-            <h3 class="texto_claro">Nombre Empleado</h3>
-            <input class="form-control" type="text" value="Ricardo Nicolas Melara" aria-label="Disabled input"
-                disabled readonly>
-            <h3 class="texto_claro">Dui</h3>
-            <input class="form-control" type="text" value="1235484-8" aria-label="Disabled input" disabled readonly>
-            <h3 class="texto_claro">Correo Empleado</h3>
-            <input class="form-control" type="text" value="Ricardo@gmail.com" aria-label="Disabled input" disabled
-                readonly>
-            <h3 class="texto_claro">Teléfono Empleado</h3>
-            <input class="form-control" type="text" value="7599-2988" aria-label="Disabled input" disabled readonly>
-            <h3 class="texto_claro">Fecha nacimiento</h3>
-            <input class="form-control" type="text" value="Ricardo Nicolas Melara" aria-label="Disabled input"
-                disabled readonly>
-        </div>
-    </div>
 
     <footer>
 
@@ -110,5 +131,3 @@
 </body>
 
 </html>
-
-
