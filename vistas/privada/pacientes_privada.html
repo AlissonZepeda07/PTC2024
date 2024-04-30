@@ -339,6 +339,14 @@
                                         <div class="col-6">
                                             <a class="btn btn-primary mb-3"
                                                 href="../privada/tratamiento.html" role="button">Tratamientos</a>
+                                                <br>
+                                                <br>
+                                                <p class="fs-5 fw-normal">Edad</p>
+                                                <form action="https://example.com">
+                                                    <input type="date" name="bday" />
+                                                  </label>
+                                                </form>
+
                                         </div>
                                     </div>
                                 </div>
@@ -379,7 +387,6 @@
                                 src="../../recursos/img/Atras.png" alt="" width="20px"></button>
                         <h1 class="modal-title fs-5 text-bg-dark" id="exampleModalLabel"> Agregar paciente </h1>
                     </div>
-
                     <!-- Body del modal -->
                     <div class="modal-body">
                         <div class="container mt-3 mb-2">
@@ -388,12 +395,6 @@
                                     <div class="col-sm-10 col-md-6 col-lg-4">
                                         <div class="col-12 text-center ms-4">
                                             <img src="../../recursos/img/admin/Paciente2.png" alt="" width="300px">
-                                            <div class="col-12 mt-3">
-                                                <a class="btn btn-primary" href="dalendario_pacientes.html"
-                                                    role="button">Agregar cumpleaños</a>
-                                            </div>
-                                            <img src="../../recursos/img/admin/Ca" alt="" width="300px"
-                                                class="mt-4 mb-4">
                                         </div>
                                     </div>
 
@@ -444,7 +445,14 @@
                                             <label for="floatingTextarea2"> Nota: </label>
                                             <textarea class="textopacienteprivado form-control mt-3 pb-5"
                                                 id="floatingTextarea" required></textarea>
-
+                                                <br>
+                                                <div>
+                                                    <p>fecha nacimiento</p>
+                                                <form action="https://example.com">
+                                                      <input type="date" name="bday" />
+                                                    </label>
+                                                  </form>
+                                                  </div>
                                             <label for="validationCustom01" class="form-label mt-3"> Dui: </label>
                                             <input type="text" class="form-control" id="dui" placeholder="00000000-0"
                                                 aria-label="Username" aria-describedby="basic-addon1" required>
@@ -500,7 +508,6 @@
                                             <div class="col-12 text-center ms-4">
                                                 <img src="../../recursos/img/admin/Paciente2.png" alt="" width="258px"class="ms-3">
                                             </div>
-
                                             <div class="col-12 mt-3 text-center ms-4">
                                                 <a class="btn btn-primary" href="dalendario_pacientes.html"
                                                     role="button"> Editar cumpleaños </a>
@@ -645,6 +652,7 @@
 
     <!-- Javascript validaciones formulario -->
     <script src="../../controlles/privada/Validaciones.js"></script>
+    <script src="../../recursos/js/calendario.js"></script>
 
 </body>
 
