@@ -25,15 +25,19 @@ header.innerHTML = `<div class="fondo_oscuro">
             </div>
         </div>
     </div>
-    <div class="col-sm-10 col-md-10 col-lg-10 text-center mt-4">
+    <div class="col-sm-9 col-md-9 col-lg-9 text-center mt-4">
         <img src="../../recursos/img/icono.png" alt="">
     </div>
 
-    <div class="col-sm-1 col-md-1 col-lg-1 text-center">
-        <a class="boton" href="#">
-            <img src="../../recursos/img/admin/usuario.png" class=" data-bs-toggle=" modal"
-                data-bs-target="#Modalperfil" width="80px" alt="Descripción de la imagen">
-        </a>
+    <div class="col-sm-2 col-md-2 col-lg-2 text-center dropdown ">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="boton" href="#">
+                <img src="../../recursos/img/admin/usuario.png" width="80px" alt="Descripción de la imagen">
+            </a>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../../vistas/privada/perfil.html">perfil</a></li>
+        </ul>
     </div>
 </div>
 </div>`
@@ -76,8 +80,3 @@ footer.innerHTML = `
 </div>
 <!-- Copyright -->
 </div>`
-
-const perfilM = document.querySelector("perfilM");
-
-perfilM.innerHTML = `
-`
