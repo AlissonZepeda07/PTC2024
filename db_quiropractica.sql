@@ -1,8 +1,8 @@
-DROP DATABASE if EXISTS db_quiropractica_especifica;
+DROP DATABASE if EXISTS db_quiropractica;
 
-CREATE DATABASE db_quiropractica_especifica;
+CREATE DATABASE db_quiropractica;
 
-USE db_quiropractica_especifica;
+USE db_quiropractica;
 
 CREATE TABLE tb_clientes(
 id_cliente int primary key auto_increment not null,
