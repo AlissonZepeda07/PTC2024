@@ -33,11 +33,11 @@ nacimiento_empleado DATE NOT NULL,
 estado_empleado	bool
 ); 
 
-create table tb_usuarios(
+create table tb_admin(
 id_usuario	int auto_increment key,
-nombre_usuario	varchar(50) unique not null,
+nombre_admin	varchar(50) unique not null,
 contrasenia		varchar(500) not null,
-foto_usuario	varchar(200),
+foto_admin	varchar(200),
 id_empleado INT ,
 FOREIGN KEY (id_empleado) REFERENCES tb_empleado (id_empleado)
 );
